@@ -1,325 +1,573 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="utf-8">
-  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>ZJQ&#39;s Blog</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title></title>
+    <meta name="author" content="ZJQ">
+    
+    
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="ZJQ's Blog">
-<meta property="og:url" content="https://coder-zjq.github.io/index.html">
-<meta property="og:site_name" content="ZJQ's Blog">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZJQ's Blog">
-  
-    <link rel="alternative" href="/atom.xml" title="ZJQ&#39;s Blog" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="//favicon.png">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
+    
+    <meta property="og:site_name" content="ZJQ&#39;s Blog"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="alternate" href="/atom.xml" title="ZJQ&#39;s Blog" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 
+
 <body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-	<header id="header" class="inner">
-		<a href="/" class="profilepic">
-			
-			<img lazy-src="0" class="js-avatar">
-			
-		</a>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
 
-		<hgroup>
-		  <h1 class="header-author"><a href="/">ZJQ</a></h1>
-		</hgroup>
+    <nav class="indigo">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">ZJQ&#39;s Blog</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/" >
+                            <i class="fa fa-home "></i>
+                            
+                            Home
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            Archives
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                            <i class="fa fa-bookmark "></i>
+                            
+                            Categories
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            Search
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav indigo darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://ww2.sinaimg.cn/small/74990035jw1f1rjkd681bj20rs0rsdhg.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">你的大名</p>
+                        <p class="desc">Web前端/iOS/技术宅</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
 
-		
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/" >
+                    <i class="fa fa-home "></i>
+                    
+                    Home
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    Archives
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-category category-menu" href="javascript:;" data-activates="category-menu" >
+                    <i class="fa fa-bookmark "></i>
+                    
+                    Categories
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    Search
+                </a>
+            </li>
+        
+    </ul>
 
-		
-			<div class="switch-btn">
-				<div class="icon">
-					<div class="icon-ctn">
-						<div class="icon-wrap icon-house" data-idx="0">
-							<div class="birdhouse"></div>
-							<div class="birdhouse_holes"></div>
-						</div>
-						<div class="icon-wrap icon-ribbon hide" data-idx="1">
-							<div class="ribbon"></div>
-						</div>
-						
-						<div class="icon-wrap icon-link hide" data-idx="2">
-							<div class="loopback_l"></div>
-							<div class="loopback_r"></div>
-						</div>
-						
-						
-						<div class="icon-wrap icon-me hide" data-idx="3">
-							<div class="user"></div>
-							<div class="shoulder"></div>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="tips-box hide">
-					<div class="tips-arrow"></div>
-					<ul class="tips-inner">
-						<li>Menu</li>
-						<li>Тэги</li>
-						
-						<li>Links</li>
-						
-						
-						<li>О сайте</li>
-						
-					</ul>
-				</div>
-			</div>
-		
+    <ul class="side-nav indigo darken-1" id="category-menu">
+    
 
-		<div class="switch-area">
-			<div class="switch-wrap">
-				<section class="switch-part switch-part1">
-					<nav class="header-menu">
-						<ul>
-						
-							<li><a href="/">主页</a></li>
-				        
-							<li><a href="/archives">所有文章</a></li>
-				        
-						</ul>
-					</nav>
-					<nav class="header-nav">
-						<div class="social">
-							
-								<a class="github" target="_blank" href="#" title="github">github</a>
-					        
-								<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
-					        
-								<a class="rss" target="_blank" href="#" title="rss">rss</a>
-					        
-								<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-					        
-						</div>
-					</nav>
-				</section>
-				
-				
-				<section class="switch-part switch-part2">
-					<div class="widget tagcloud" id="js-tagcloud">
-						
-					</div>
-				</section>
-				
-				
-				
-				<section class="switch-part switch-part3">
-					<div id="js-friends">
-					
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">奥巴马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">卡卡的美丽传说</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">本泽马的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">吉格斯的博客</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">习大大大不同</a>
-			        
-			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://localhost:4000/">托蒂的博客</a>
-			        
-			        </div>
-				</section>
-				
+            
 
-				
-				
-				<section class="switch-part switch-part4">
-				
-					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
-				</section>
-				
-			</div>
-		</div>
-	</header>				
+            <li class="collapse-level-0" collapse-level="0">
+                <a class="no-padding" href="/categories/Technology/">
+                    Technology <span class="right">2</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Technology/Programming-Language/">
+                    Programming-Language <span class="right">1</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-2" collapse-level="2">
+                <a class="no-padding" href="/categories/Technology/Programming-Language/Objective-C/">
+                    Objective-C <span class="right">1</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-1" collapse-level="1">
+                <a class="no-padding" href="/categories/Technology/Development-Tool/">
+                    Development-Tool <span class="right">1</span></a>
+                </a>
+            </li>
+
+        
+
+            <li class="collapse-level-2" collapse-level="2">
+                <a class="no-padding" href="/categories/Technology/Development-Tool/Git/">
+                    Git <span class="right">1</span></a>
+                </a>
+            </li>
+
+        
+
+    </ul>
 </div>
 
+        </div>
     </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-  	<div class="overlay">
-  		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">ZJQ</h1>
-  	</div>
-	<div class="intrude-less">
-		<header id="header" class="inner">
-			<div class="profilepic">
-				
-					<img lazy-src="0" class="js-avatar">
-				
-			</div>
-			<hgroup>
-			  <h1 class="header-author">ZJQ</h1>
-			</hgroup>
-			
-			<nav class="header-menu">
-				<ul>
-				
-					<li><a href="/">主页</a></li>
-		        
-					<li><a href="/archives">所有文章</a></li>
-		        
-		        <div class="clearfix"></div>
-				</ul>
-			</nav>
-			<nav class="header-nav">
-				<div class="social">
-					
-						<a class="github" target="_blank" href="#" title="github">github</a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss">rss</a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-			        
-				</div>
-			</nav>
-		</header>				
-	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-git-code" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/08/16/git-code/" class="article-date">
-  	<time datetime="2016-08-16T11:10:41.000Z" itemprop="datePublished">2016-08-16</time>
-</a>
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">Search</label>
+        </div>
+
     </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/08/16/git-code/">Git 常用指令记录</a>
-    </h1>
-  
 
-      </header>
-      
+
+
+<div id="article-list" class="container main-container">
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="配置与帮助"><a href="#配置与帮助" class="headerlink" title="配置与帮助"></a>配置与帮助</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 查看 Git 配置信息</div><div class="line">$ git config -l</div><div class="line"></div><div class="line"># 修改 Git 配置文件</div><div class="line">$ git config -e</div><div class="line"></div><div class="line"># 修改提交时的用户信息</div><div class="line">$ git config user.name <span class="string">"[name]"</span></div><div class="line">$ git config user.email <span class="string">"[email]"</span></div><div class="line"></div><div class="line"># 查看所有指令</div><div class="line">$ git help</div><div class="line"></div><div class="line"># 查看某条指令，例如 config</div><div class="line">$ git config --help</div></pre></td></tr></table></figure>
-<h2 id="版本库创建"><a href="#版本库创建" class="headerlink" title="版本库创建"></a>版本库创建</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 在当前文件夹初始化一个空的版本库，若已存在版本库则将其重新初始化</div><div class="line">$ git init</div><div class="line"></div><div class="line"># 新建一个目录并初始化一个空的版本库</div><div class="line">$ git init [repo-name]</div><div class="line"></div><div class="line"># 通过 ssh 从远程仓库克隆</div><div class="line">$ git clone git@github.com:Coder-ZJQ/Test-Git.git</div><div class="line"></div><div class="line"># 通过 https 从远程仓库克隆</div><div class="line">$ git clone https:<span class="comment">//github.com/Coder-ZJQ/Test-Git.git</span></div></pre></td></tr></table></figure>
-<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 新建一个文件</div><div class="line">$ touch [file-name]</div><div class="line"></div><div class="line"># 新建一个文件夹</div><div class="line">$ mkdir [dir-name]</div><div class="line"></div><div class="line"># 查看一个文件</div><div class="line">$ cat [file-name]</div><div class="line"></div><div class="line"># 编辑一个文件，编辑完成输入 <span class="string">":wq"</span> 保存退出</div><div class="line">$ vi [file-name]</div><div class="line"></div><div class="line"># 将工作区中已修改的文件，添加到暂存区（可多个文件）</div><div class="line">$ git add [file1] [file2] ...</div><div class="line"></div><div class="line"># 将文件夹下已修改的文件添加到暂存区（可多个文件夹）</div><div class="line">$ git add [dir1] [dir2] ...</div><div class="line"></div><div class="line"># 将当前目录下的所有已修改文件添加至暂存区</div><div class="line">$ git add ./</div><div class="line"></div><div class="line"># 删除工作区的文件，并将此次操作放入暂存区</div><div class="line">$ git rm [file1] [file2] ...</div><div class="line"></div><div class="line"># 删除文件夹下的所有文件，并将此次操作放入暂存区（并不会删除文件夹）</div><div class="line">$ git rm -r [dir]</div><div class="line"></div><div class="line"># 为文件改名，并将此次操作放入暂存区</div><div class="line">$ git mv [file-original] [file-renamed]</div></pre></td></tr></table></figure>
-<h2 id="修改管理"><a href="#修改管理" class="headerlink" title="修改管理"></a>修改管理</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 查看当前状态</div><div class="line">$ git status</div><div class="line"></div><div class="line"># 将暂存区的修改提交至当前分支</div><div class="line">$ git commit -m <span class="string">"[message]"</span></div><div class="line"></div><div class="line"># 将暂存区中的指定文件或文件夹添加到当前分支</div><div class="line">$ git commit [file] | [dir] ... -m <span class="string">"[message]"</span></div><div class="line"></div><div class="line"># 将修改或删除的文件直接提交至当前分支，跳过 add 步骤（新建文件还需先 add ）</div><div class="line">$ git commit -a -m <span class="string">"[message]"</span></div><div class="line"></div><div class="line"># 提交一次新的 commit，重写 message</div><div class="line">$ git commit --amend -m <span class="string">"[message]"</span></div><div class="line"></div><div class="line"># 恢复修改至最近的一次 commit 或者 add，即放弃工作区中的修改</div><div class="line">$ git checkout [file] | [dir] ...</div><div class="line"></div><div class="line"># 若是已经将工作区的修改 add 至暂存区，可以先 reset 然后再 checkout</div><div class="line">$ git reset HEAD [file] | [dir] ...</div><div class="line"></div><div class="line"># 若是已经 add 并且 commit，可以版本回退，撤销修改</div><div class="line">$ git reset --hard [commit-id]</div><div class="line"></div><div class="line"># 保存当前工作区至工作栈</div><div class="line">$ git stash</div><div class="line"></div><div class="line"># 恢复工作栈栈顶的工作区，但并不会删除</div><div class="line">$ git stash apply</div><div class="line"></div><div class="line"># 删除工作栈栈顶的工作区</div><div class="line">$ git stash drop</div><div class="line"></div><div class="line"># 将工作栈栈顶的工作区出栈：恢复工作区并删除</div><div class="line">$ git stash pop</div><div class="line"></div><div class="line"># 查看工作栈中保存的工作区</div><div class="line">$ git stash <span class="built_in">list</span></div></pre></td></tr></table></figure>
-<h2 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 查看本地分支</div><div class="line">$ git branch</div><div class="line"></div><div class="line"># 查看远程分支</div><div class="line">$ git branch -r</div><div class="line"></div><div class="line"># 查看所有分支</div><div class="line">$ git branch -a</div><div class="line"></div><div class="line"># 创建一个新的分支</div><div class="line">$ git branch [branch-name]</div><div class="line"></div><div class="line"># 在指定 commit 创建一个分支</div><div class="line">$ git branch [branch-name] [commit-id]</div><div class="line"></div><div class="line"># 在指定 tag 创建一个分支</div><div class="line">$ git branch [branch-name] [tag-name]</div><div class="line"></div><div class="line"># 新建一个分支，并追踪一个远程分支</div><div class="line">$ git branch --track [branch-name] [remote-branch-name]</div><div class="line"></div><div class="line"># 在现有分支与指定的远程分支之间建立追踪关系</div><div class="line">$ git branch --<span class="built_in">set</span>-upstream [branch-name] [remote-branch-name]</div><div class="line">$ git branch -f --track test [branch-name] [remote-branch-name]</div><div class="line"></div><div class="line"># 切换分支</div><div class="line">$ git checkout [branch-name]</div><div class="line"></div><div class="line"># 切换到上一个分支</div><div class="line">$ git checkout -</div><div class="line"></div><div class="line"># 创建一个新的分支，并跳转至该分支</div><div class="line">$ git checkout -b [branch-name]</div><div class="line"></div><div class="line"># 合并某分支至当前分支，默认是 Fast-forward 模式</div><div class="line">$ git merge [branch-name]</div><div class="line"></div><div class="line"># 选择一个commit，合并进当前分支</div><div class="line">$ git cherry-pick [commit]</div><div class="line"></div><div class="line"># 删除分支</div><div class="line">$ git branch -d [branch-name]</div><div class="line"></div><div class="line"># 删除远程分支</div><div class="line">$ git push origin --<span class="keyword">delete</span> [branch-name]</div><div class="line">$ git branch -dr [remote-branch]</div></pre></td></tr></table></figure>
-<h2 id="远程仓库操作"><a href="#远程仓库操作" class="headerlink" title="远程仓库操作"></a>远程仓库操作</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 创建 SSH Key</div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"youremail@example.com"</span></div><div class="line"></div><div class="line"># 本地关联远程版本库，并设置简称</div><div class="line">$ git remote add [remote-name] [remote-SSG | remote-URL]</div><div class="line"></div><div class="line"># 将远程版本库代码更新至本地，但并不会执行合并操作</div><div class="line">$ git fetch [remote-name]</div><div class="line"></div><div class="line"># 从远程版本库获取代码，并与本地分支合并</div><div class="line">$ git pull [remote-name] [branch-name]</div><div class="line"></div><div class="line"># 上传本地指定分支到远程仓库</div><div class="line">$ git push [remote-name] [branch-name]</div><div class="line"></div><div class="line"># 强行推送当前分支到远程仓库，即使有冲突</div><div class="line">$ git push [remote-name] --force</div><div class="line"></div><div class="line"># 推送所有分支到远程仓库</div><div class="line">$ git push [remote-name] --all</div><div class="line"></div><div class="line"># 显示所有远程版本库</div><div class="line">$ git remote -v</div><div class="line"></div><div class="line"># 显示某个远程版本库信息</div><div class="line">$ git remote show [remote-name]</div></pre></td></tr></table></figure>
-<h2 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 列出所有 tag </div><div class="line">$ git tag</div><div class="line"></div><div class="line"># 查看 tag 信息</div><div class="line">$ git show [tag-name]</div><div class="line"></div><div class="line"># 在当前 commit 新建一个 tag</div><div class="line">$ git tag [tag-name]</div><div class="line"></div><div class="line"># 在指定 commit 上新建一个 tag</div><div class="line">$ git tag [tag-name] [commit-id]</div><div class="line"></div><div class="line"># 创建一个 tag 并指定标签信息</div><div class="line">$ git tag -a [tag-name] -m <span class="string">"[message]"</span> [commit-id]</div><div class="line"></div><div class="line"># 删除标签</div><div class="line">$ git tag -d [tag-name]</div><div class="line"></div><div class="line"># 推送本地标签至远程版本库</div><div class="line">$ git push [remote-name] [tag-name]</div><div class="line"></div><div class="line"># 推送所有尚未推送的本地标签至远程版本库</div><div class="line">$ git push [remote-name] --tags</div><div class="line"></div><div class="line"># 删除远程版本库中的标签，先删除本地，再推送删除远程</div><div class="line">$ git tag -d [tag-name]</div><div class="line">$ git push [remote-name] :refs/tags/[tag-name]</div></pre></td></tr></table></figure>
-<h2 id="信息查看"><a href="#信息查看" class="headerlink" title="信息查看"></a>信息查看</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 显示有变更的文件</div><div class="line">$ git status</div><div class="line"></div><div class="line"># 显示当前分支的版本历史</div><div class="line">$ git <span class="built_in">log</span></div><div class="line"></div><div class="line"># 显示commit历史，以及每次commit发生变更的文件</div><div class="line">$ git <span class="built_in">log</span> --stat</div><div class="line"></div><div class="line"># 搜索提交历史，根据关键词</div><div class="line">$ git <span class="built_in">log</span> -S [keyword]</div><div class="line"></div><div class="line"># 显示某个commit之后的所有变动，每个commit占据一行</div><div class="line">$ git <span class="built_in">log</span> [tag] HEAD --pretty=format:%s</div><div class="line"></div><div class="line"># 显示某个commit之后的所有变动，其<span class="string">"提交说明"</span>必须符合搜索条件</div><div class="line">$ git <span class="built_in">log</span> [tag] HEAD --grep feature</div><div class="line"></div><div class="line"># 显示某个文件的版本历史，包括文件改名</div><div class="line">$ git <span class="built_in">log</span> --follow [file]</div><div class="line">$ git whatchanged [file]</div><div class="line"></div><div class="line"># 显示指定文件相关的每一次diff</div><div class="line">$ git <span class="built_in">log</span> -p [file]</div><div class="line"></div><div class="line"># 显示过去<span class="number">5</span>次提交</div><div class="line">$ git <span class="built_in">log</span> <span class="number">-5</span> --pretty --oneline</div><div class="line"></div><div class="line"># 显示所有提交过的用户，按提交次数排序</div><div class="line">$ git shortlog -sn</div><div class="line"></div><div class="line"># 显示指定文件是什么人在什么时间修改过</div><div class="line">$ git blame [file]</div><div class="line"></div><div class="line"># 显示暂存区和工作区的差异</div><div class="line">$ git diff</div><div class="line"></div><div class="line"># 显示暂存区和上一个commit的差异</div><div class="line">$ git diff --cached [file]</div><div class="line"></div><div class="line"># 显示工作区与当前分支最新commit之间的差异</div><div class="line">$ git diff HEAD</div><div class="line"></div><div class="line"># 显示两次提交之间的差异</div><div class="line">$ git diff [first-branch]...[second-branch]</div><div class="line"></div><div class="line"># 显示今天你写了多少行代码</div><div class="line">$ git diff --shortstat <span class="string">"@&#123;0 day ago&#125;"</span></div><div class="line"></div><div class="line"># 显示某次提交的元数据和内容变化</div><div class="line">$ git show [commit]</div><div class="line"></div><div class="line"># 显示某次提交发生变化的文件</div><div class="line">$ git show --name-only [commit]</div><div class="line"></div><div class="line"># 显示某次提交时，某个文件的内容</div><div class="line">$ git show [commit]:[filename]</div><div class="line"></div><div class="line"># 显示当前分支的最近几次提交</div><div class="line">$ git reflog</div></pre></td></tr></table></figure>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><figure class="highlight c"><table><tr><td class="code"><pre><div class="line"># 生成一个可供发布的压缩包</div><div class="line">$ git archive</div></pre></td></tr></table></figure>
-<hr>
-<p> 参考资料：<br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的官方网站 - Git 教程</a><br><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html?utm_source=tool.lu" target="_blank" rel="external">阮一峰 - 常用 Git 清单</a><br><a href="https://git-scm.com/docs" target="_blank" rel="external">git-scm</a></p>
+        <article class="simple-article">
+        <div class="card">
+            <div class="card-content">
+                <div class="article-title">
+                    
+    
+        <h1 class="undefined-link-context"><a href="/2016/08/16/difference-between-self-and-super-in-Objective-C/">difference between self and super in Objective-C</a></h1>
+    
 
-      
+
+                </div>
+
+                <time class="indigo-link-context" datetime="2016-08-16T12:42:26.000Z"><a href="/2016/08/16/difference-between-self-and-super-in-Objective-C/">2016-08-16</a></time>
+
+                
+    <div class="tags-row">
+        
+            <a href="/tags/self/" class="chip green accent-4">self</a>
+        
+            <a href="/tags/super/" class="chip green accent-4">super</a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
 
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
+
+
+                
+                    <div class="entry indigo-link-context">
+                        <h3 id="以下代码的打印结果是什么？为什么？"><a href="#以下代码的打印结果是什么？为什么？" class="headerlink" title="以下代码的打印结果是什么？为什么？"></a>以下代码的打印结果是什么？为什么？</h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQApple</span> : <span class="title">JQFruit</span></span></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">JQApple</span></span></div><div class="line">- (<span class="keyword">instancetype</span>)init&#123;</div><div class="line">    <span class="keyword">self</span> = [<span class="keyword">super</span> init];</div><div class="line">    <span class="keyword">if</span> (<span class="keyword">self</span>) &#123;</div><div class="line">        <span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, <span class="built_in">NSStringFromClass</span>([<span class="keyword">self</span> <span class="keyword">class</span>]));</div><div class="line">        <span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, <span class="built_in">NSStringFromClass</span>([<span class="keyword">super</span> <span class="keyword">class</span>]));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+                    </div>
+                
+            </div>
+
+            
+            <div class="card-action indigo-link-context">
+                <a href="2016/08/16/difference-between-self-and-super-in-Objective-C/">READ MORE</a>
+            </div>
+            
+        </div>
 </article>
 
+    
+        <article class="simple-article">
+        <div class="card">
+            <div class="card-content">
+                <div class="article-title">
+                    
+    
+        <h1 class="undefined-link-context"><a href="/2016/08/16/git-code/">Git 常用指令记录</a></h1>
+    
 
 
+                </div>
 
+                <time class="indigo-link-context" datetime="2016-08-16T11:10:41.000Z"><a href="/2016/08/16/git-code/">2016-08-16</a></time>
 
-
-
-
-
-  
-  
-</div>
-      <footer id="footer">
-  <div class="outer">
-    <div id="footer-info">
-    	<div class="footer-left">
-    		&copy; 2016 ZJQ
-    	</div>
-      	<div class="footer-right">
-      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+                
+    <div class="tags-row">
+        
+            <a href="/tags/Git/" class="chip green accent-4">Git</a>
+        
     </div>
+
+
+
+                
+                    <div class="entry indigo-link-context">
+                        <h2 id="配置与帮助"><a href="#配置与帮助" class="headerlink" title="配置与帮助"></a>配置与帮助</h2><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># 查看 Git 配置信息</span></div><div class="line">$ git config <span class="_">-l</span></div><div class="line"></div><div class="line"><span class="comment"># 修改 Git 配置文件</span></div><div class="line">$ git config <span class="_">-e</span></div><div class="line"></div><div class="line"><span class="comment"># 修改提交时的用户信息</span></div><div class="line">$ git config user.name <span class="string">"[name]"</span></div><div class="line">$ git config user.email <span class="string">"[email]"</span></div><div class="line"></div><div class="line"><span class="comment"># 查看所有指令</span></div><div class="line">$ git <span class="built_in">help</span></div><div class="line"></div><div class="line"><span class="comment"># 查看某条指令，例如 config</span></div><div class="line">$ git config --help</div></pre></td></tr></table></figure>
+                    </div>
+                
+            </div>
+
+            
+            <div class="card-action indigo-link-context">
+                <a href="2016/08/16/git-code/">READ MORE</a>
+            </div>
+            
+        </div>
+</article>
+
+    
+
+    <ul class="pagination center-align">
+    <li class="disabled">
+        <a href="/"><i class="fa fa-angle-left"></i></a>
+    </li>
+    
+    
+        <li class="active green"><a href="/">1</a></li>
+    
+    
+    <li class="disabled">
+        <a href="/"><i class="fa fa-angle-right"></i></a>
+    </li>
+ </ul>
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large green">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect blue" title="Return to top"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse orange"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
   </div>
-</footer>
+
+    </main>
+    <footer class="page-footer indigo darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m3 s12">
+                <h5 class="white-text">Social</h5>
+                
+                    <a class="social-link" href="https://github.com/coder-zjq" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+                    <a class="social-link" href="/atom.xml" target="_blank">
+                        <i class="fa fa-2x fa-rss"></i>
+                    </a>
+                
+            </div>
+            
+
+            
+            <div class="col m9 s12">
+                <h5 class="white-text">Links</h5>
+                
+                    <a class="social-link" href="http://www.jianshu.com/users/724336ce8600/" target="_blank">简书</a>
+                
+            </div>
+            
+        </div>
     </div>
     
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
 
+    <div class="footer-copyright indigo-link-context">
+        <div class="container">
+            © 2016 www.zhaojinqiao.com, All rights reserved.
+            <p class="right" style="margin-top: 0;">Blog powered by <a href="https://hexo.io">Hexo</a> | Theme <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
 
 <script>
-	var yiliaConfig = {
-		fancybox: true,
-		mathjax: true,
-		animate: true,
-		isHome: true,
-		isPost: false,
-		isArchive: false,
-		isTag: false,
-		isCategory: false,
-		open_in_new: false,
-		root: /
-	}
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('green lighten-2');
+
+            
+            // 添加new标签
+            $('.menu-reading, .menu-about').append('<span class="new badge pink"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "search.xml";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword indigo lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword indigo lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
-<script src="/js/main.js"></script>
+
+
+<script src="/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
 
 
 
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=57984884" charset="UTF-8"></script>
 
 
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
 });
 </script>
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
 
-  </div>
+
 </body>
 </html>
