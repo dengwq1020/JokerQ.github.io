@@ -1,0 +1,880 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Other," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="一、准备工作1. 下载 ipa ：
+iTunes –&amp;gt; App Store –&amp;gt; 下载所需素材的应用。下载完成后，可在我的 iPhone 应用 –&amp;gt; 在 Finder 中显示，看到下载的 ipa 文件。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何抽取其它应用素材 - iOS">
+<meta property="og:url" content="https://coder-zjq.github.io/2016/04/17/extract-images/index.html">
+<meta property="og:site_name" content="ZJQ's Blog">
+<meta property="og:description" content="一、准备工作1. 下载 ipa ：
+iTunes –&amp;gt; App Store –&amp;gt; 下载所需素材的应用。下载完成后，可在我的 iPhone 应用 –&amp;gt; 在 Finder 中显示，看到下载的 ipa 文件。">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-0d3777a1f451a7c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-cd5132e61b1c13c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-7edf4abfb824bd31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-fbee9c328a0b9b32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-86e42dd29d18a610.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-1ecd30af975185bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-ff2eb4ba19a1bd18.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-3159c1cf758c09c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-58e589e72a5d9a72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1946487-49bbefa45da39562.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2016-08-18T14:23:17.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何抽取其它应用素材 - iOS">
+<meta name="twitter:description" content="一、准备工作1. 下载 ipa ：
+iTunes –&amp;gt; App Store –&amp;gt; 下载所需素材的应用。下载完成后，可在我的 iPhone 应用 –&amp;gt; 在 Finder 中显示，看到下载的 ipa 文件。">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1946487-0d3777a1f451a7c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="https://coder-zjq.github.io/2016/04/17/extract-images/"/>
+
+  <title> 如何抽取其它应用素材 - iOS | ZJQ's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ZJQ's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '3sn3CRW2tUp3Kduce-we','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                如何抽取其它应用素材 - iOS
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-17T22:01:04+08:00" content="2016-04-17">
+              2016-04-17
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/" itemprop="url" rel="index">
+                    <span itemprop="name">Technology</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Other/" itemprop="url" rel="index">
+                    <span itemprop="name">Other</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/17/extract-images/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/17/extract-images/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h3><h4 id="1-下载-ipa-："><a href="#1-下载-ipa-：" class="headerlink" title="1. 下载 ipa ："></a>1. 下载 ipa ：</h4><blockquote>
+<p>iTunes –&gt; App Store –&gt; 下载所需素材的应用。下载完成后，可在我的 iPhone 应用 –&gt; 在 Finder 中显示，看到下载的 ipa 文件。   </p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/1946487-0d3777a1f451a7c8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ipa文件.png"></p>
+<a id="more"></a>
+<h4 id="2-生成-cartool-可执行文件"><a href="#2-生成-cartool-可执行文件" class="headerlink" title="2. 生成 cartool 可执行文件"></a>2. 生成 cartool 可执行文件</h4><blockquote>
+<p>在 github 上下载 <a href="https://github.com/steventroughtonsmith/cartool" target="_blank" rel="external">cartool</a> ，用 Xcode 打开并执行，便可在项目的 Products 文件夹下找到生成 cartool 可执行文件。</p>
+</blockquote>
+<p><code>（TIPS：若是需将 cartoon 移动至其他文件夹，不要直接在工程目录下直接拖动，这样只是生成个替身。正确的方式应 show in finder 在 finder 中操作。）</code><br><img src="http://upload-images.jianshu.io/upload_images/1946487-cd5132e61b1c13c7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cartool.png">  </p>
+<hr>
+<h3 id="二、具体步骤"><a href="#二、具体步骤" class="headerlink" title="二、具体步骤"></a>二、具体步骤</h3><h4 id="1-右击下载的-ipa-文件-–-gt-打开方式-–-gt-选择归档实用工具；"><a href="#1-右击下载的-ipa-文件-–-gt-打开方式-–-gt-选择归档实用工具；" class="headerlink" title="1. 右击下载的 ipa 文件 –&gt; 打开方式 –&gt; 选择归档实用工具；"></a>1. 右击下载的 ipa 文件 –&gt; 打开方式 –&gt; 选择归档实用工具；</h4><p><img src="http://upload-images.jianshu.io/upload_images/1946487-7edf4abfb824bd31.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="归档实用工具.png"></p>
+<h4 id="2-可解档出一文件夹-–-gt-Payload-–-gt-显示包内容；"><a href="#2-可解档出一文件夹-–-gt-Payload-–-gt-显示包内容；" class="headerlink" title="2. 可解档出一文件夹 –&gt; Payload –&gt; 显示包内容；"></a>2. 可解档出一文件夹 –&gt; Payload –&gt; 显示包内容；</h4><p><img src="http://upload-images.jianshu.io/upload_images/1946487-fbee9c328a0b9b32.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="显示包内容.png"></p>
+<h4 id="3-在该包内便有部分所需的素材；"><a href="#3-在该包内便有部分所需的素材；" class="headerlink" title="3. 在该包内便有部分所需的素材；"></a>3. 在该包内便有部分所需的素材；</h4><p><img src="http://upload-images.jianshu.io/upload_images/1946487-86e42dd29d18a610.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="包内容.png"></p>
+<h4 id="4-但还有部分素材保存在-Assets-car-文件中，此时就可以用到刚才生成的-cartool-，抽取其中的素材；"><a href="#4-但还有部分素材保存在-Assets-car-文件中，此时就可以用到刚才生成的-cartool-，抽取其中的素材；" class="headerlink" title="4. 但还有部分素材保存在 Assets.car 文件中，此时就可以用到刚才生成的 cartool ，抽取其中的素材；"></a>4. 但还有部分素材保存在 Assets.car 文件中，此时就可以用到刚才生成的 cartool ，抽取其中的素材；</h4><p><img src="http://upload-images.jianshu.io/upload_images/1946487-1ecd30af975185bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Assets_car.png"></p>
+<h4 id="5-打开终端-cd-到-cartool-所在的文件夹下，执行命令-cartool-Assets-car所在文件夹-存放素材的文件夹-，便可获得-Assets-car-中的素材。"><a href="#5-打开终端-cd-到-cartool-所在的文件夹下，执行命令-cartool-Assets-car所在文件夹-存放素材的文件夹-，便可获得-Assets-car-中的素材。" class="headerlink" title="5. 打开终端 cd 到 cartool 所在的文件夹下，执行命令 ./cartool [Assets.car所在文件夹] [存放素材的文件夹] ，便可获得 Assets.car 中的素材。"></a>5. 打开终端 cd 到 cartool 所在的文件夹下，执行命令 <code>./cartool [Assets.car所在文件夹] [存放素材的文件夹]</code> ，便可获得 Assets.car 中的素材。</h4><p><img src="http://upload-images.jianshu.io/upload_images/1946487-ff2eb4ba19a1bd18.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cd_cartool.jpg"> </p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1946487-3159c1cf758c09c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="素材.png"></p>
+<h4 id="6-获取的素材一般会带有-“-iphone”-或者-“-ipad”-，使用时需替换掉，因此需批量更改素材名，可用-Xcode-编写代码"><a href="#6-获取的素材一般会带有-“-iphone”-或者-“-ipad”-，使用时需替换掉，因此需批量更改素材名，可用-Xcode-编写代码" class="headerlink" title="6. 获取的素材一般会带有 “~iphone” 或者 “~ipad” ，使用时需替换掉，因此需批量更改素材名，可用 Xcode 编写代码"></a>6. 获取的素材一般会带有 “~iphone” 或者 “~ipad” ，使用时需替换掉，因此需批量更改素材名，可用 Xcode 编写代码</h4><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">const</span> <span class="keyword">char</span> * argv[]) &#123;</div><div class="line">    <span class="keyword">@autoreleasepool</span> &#123;</div><div class="line">        </div><div class="line">        <span class="comment">//  素材文件夹路径（输入自己的）</span></div><div class="line">        <span class="built_in">NSString</span> *filePath = <span class="string">@"/Users/Joker/....../Images"</span>;</div><div class="line">        </div><div class="line">        <span class="comment">//  获取文件管理者</span></div><div class="line">        <span class="built_in">NSFileManager</span> *manager = [<span class="built_in">NSFileManager</span> defaultManager];</div><div class="line">        </div><div class="line">        <span class="comment">//  获取该文件夹下所有文件名</span></div><div class="line">        <span class="built_in">NSArray</span> *fileNames = [manager contentsOfDirectoryAtPath:filePath error:<span class="literal">nil</span>];</div><div class="line">        </div><div class="line">        <span class="comment">//  遍历文件名</span></div><div class="line">        <span class="keyword">for</span> (<span class="built_in">NSString</span> *fileName <span class="keyword">in</span> fileNames) &#123;</div><div class="line">            </div><div class="line">            <span class="comment">//  为修改前的文件路径</span></div><div class="line">            <span class="built_in">NSString</span> *fromPath = [filePath stringByAppendingPathComponent:fileName];</div><div class="line">            </div><div class="line">            <span class="comment">//  将“~iphone”替换为“”，最好用正则表达式，此处仅简单替换</span></div><div class="line">            <span class="built_in">NSString</span> *changeToName = [fileName stringByReplacingOccurrencesOfString:<span class="string">@"~iphone"</span> withString:<span class="string">@""</span>];</div><div class="line">            </div><div class="line">            <span class="comment">//  拼接该玩的文件名至路径</span></div><div class="line">            <span class="built_in">NSString</span> *toPath = [filePath stringByAppendingPathComponent:changeToName];</div><div class="line">            </div><div class="line">            <span class="comment">//  将素材移动至修改完的路径</span></div><div class="line">            [manager moveItemAtPath:fromPath toPath:toPath error:<span class="literal">nil</span>];</div><div class="line">            </div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="三、利用插件"><a href="#三、利用插件" class="headerlink" title="三、利用插件"></a>三、利用插件</h3><p>有个大神写了个插件 <code>iOS Images Extractor</code> ，就是下面这个：<br><img src="http://upload-images.jianshu.io/upload_images/1946487-58e589e72a5d9a72.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="iOS Images Extractor.png"></p>
+<p>不过好像删除了，如果有需要的话下面是分享的下载地址。使用的话直接将 ipa 文件拖进去就可以。   </p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1946487-49bbefa45da39562.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件界面"></p>
+<p><a href="https://github.com/duiyueliu/iOS-Images-Extractor-master" target="_blank" rel="external">项目地址</a><br><a href="https://pan.baidu.com/s/1dFNrF4P" target="_blank" rel="external">插件地址</a></p>
+<p><em>（注意，抽取的素材仅供学习，不要用于其他商业用途）</em></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Other/" rel="tag">#Other</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/04/22/cocoapods/" rel="prev" title="CocoaPods 的安装与使用">
+                CocoaPods 的安装与使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/17/extract-images/"
+           data-title="如何抽取其它应用素材 - iOS" data-url="https://coder-zjq.github.io/2016/04/17/extract-images/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460"
+               alt="ZJQ" />
+          <p class="site-author-name" itemprop="name">ZJQ</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">8</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、准备工作"><span class="nav-number">1.</span> <span class="nav-text">一、准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-下载-ipa-："><span class="nav-number">1.1.</span> <span class="nav-text">1. 下载 ipa ：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-生成-cartool-可执行文件"><span class="nav-number">1.2.</span> <span class="nav-text">2. 生成 cartool 可执行文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、具体步骤"><span class="nav-number">2.</span> <span class="nav-text">二、具体步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-右击下载的-ipa-文件-–-gt-打开方式-–-gt-选择归档实用工具；"><span class="nav-number">2.1.</span> <span class="nav-text">1. 右击下载的 ipa 文件 –> 打开方式 –> 选择归档实用工具；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-可解档出一文件夹-–-gt-Payload-–-gt-显示包内容；"><span class="nav-number">2.2.</span> <span class="nav-text">2. 可解档出一文件夹 –> Payload –> 显示包内容；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-在该包内便有部分所需的素材；"><span class="nav-number">2.3.</span> <span class="nav-text">3. 在该包内便有部分所需的素材；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-但还有部分素材保存在-Assets-car-文件中，此时就可以用到刚才生成的-cartool-，抽取其中的素材；"><span class="nav-number">2.4.</span> <span class="nav-text">4. 但还有部分素材保存在 Assets.car 文件中，此时就可以用到刚才生成的 cartool ，抽取其中的素材；</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-打开终端-cd-到-cartool-所在的文件夹下，执行命令-cartool-Assets-car所在文件夹-存放素材的文件夹-，便可获得-Assets-car-中的素材。"><span class="nav-number">2.5.</span> <span class="nav-text">5. 打开终端 cd 到 cartool 所在的文件夹下，执行命令 ./cartool [Assets.car所在文件夹] [存放素材的文件夹] ，便可获得 Assets.car 中的素材。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-获取的素材一般会带有-“-iphone”-或者-“-ipad”-，使用时需替换掉，因此需批量更改素材名，可用-Xcode-编写代码"><span class="nav-number">2.6.</span> <span class="nav-text">6. 获取的素材一般会带有 “~iphone” 或者 “~ipad” ，使用时需替换掉，因此需批量更改素材名，可用 Xcode 编写代码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#三、利用插件"><span class="nav-number">3.</span> <span class="nav-text">三、利用插件</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZJQ</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"coder-zjq"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xmlsearch";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
