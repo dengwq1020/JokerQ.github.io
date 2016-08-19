@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="＠property,＠synthesize,＠dynamic," />
 
 
 
@@ -84,12 +84,22 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZJQ's Blog">
-<meta property="og:url" content="https://coder-zjq.github.io/categories/Technology/Development-Tool/Git/index.html">
+<meta name="description" content="@property: 用于声明成员变量的 getter/setter 方法
+@synthesize: 与 @property 配套使用，@synthesize 会自动生成一个_开头的成员变量（若是不指定的话），并实现 @property 声明的 getter/setter 方法。
+@dynamic: 不会自动生成成员变量，程序员需自己添加成员变量并实现 getter/setter 方法。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="＠property 、 ＠synthesize 与 ＠dynamic 的作用">
+<meta property="og:url" content="https://coder-zjq.github.io/2016/08/09/@property_@synthesize_@dynamic/index.html">
 <meta property="og:site_name" content="ZJQ's Blog">
+<meta property="og:description" content="@property: 用于声明成员变量的 getter/setter 方法
+@synthesize: 与 @property 配套使用，@synthesize 会自动生成一个_开头的成员变量（若是不指定的话），并实现 @property 声明的 getter/setter 方法。
+@dynamic: 不会自动生成成员变量，程序员需自己添加成员变量并实现 getter/setter 方法。">
+<meta property="og:updated_time" content="2016-08-19T01:11:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZJQ's Blog">
+<meta name="twitter:title" content="＠property 、 ＠synthesize 与 ＠dynamic 的作用">
+<meta name="twitter:description" content="@property: 用于声明成员变量的 getter/setter 方法
+@synthesize: 与 @property 配套使用，@synthesize 会自动生成一个_开头的成员变量（若是不指定的话），并实现 @property 声明的 getter/setter 方法。
+@dynamic: 不会自动生成成员变量，程序员需自己添加成员变量并实现 getter/setter 方法。">
 
 
 
@@ -110,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="https://coder-zjq.github.io/categories/Technology/Development-Tool/Git/"/>
+  <link rel="canonical" href="https://coder-zjq.github.io/2016/08/09/@property_@synthesize_@dynamic/"/>
 
-  <title> 分类: Git | ZJQ's Blog </title>
+  <title> ＠property 、 ＠synthesize 与 ＠dynamic 的作用 | ZJQ's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,7 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -251,47 +261,216 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        Git
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                ＠property 、 ＠synthesize 与 ＠dynamic 的作用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-09T08:32:13+08:00" content="2016-08-09">
+              2016-08-09
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/" itemprop="url" rel="index">
+                    <span itemprop="name">Technology</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Programming-Language/" itemprop="url" rel="index">
+                    <span itemprop="name">Programming Language</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Programming-Language/Objective-C/" itemprop="url" rel="index">
+                    <span itemprop="name">Objective-C</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/09/@property_@synthesize_@dynamic/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/09/@property_@synthesize_@dynamic/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <ul>
+<li><strong>@property</strong>: 用于声明成员变量的 getter/setter 方法</li>
+<li><strong>@synthesize</strong>: 与 @property 配套使用，@synthesize 会自动生成一个<code>_</code>开头的成员变量（若是不指定的话），并实现 @property 声明的 getter/setter 方法。</li>
+<li><strong>@dynamic</strong>: 不会自动生成成员变量，程序员需自己添加成员变量并实现 getter/setter 方法。    </li>
+</ul>
+<a id="more"></a>
+<p><strong> 具体细节详见以下代码：</strong></p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQPerson</span> : <span class="title">NSObject</span></span></div><div class="line">&#123;</div><div class="line">    <span class="comment">//  3.1 由于 @dynamic 并不会自动生成成员变量，因此需自主添加成员变量用于 getter/setter 方法，否则会报 “Use undeclared identifier” 错误。</span></div><div class="line">    <span class="built_in">NSInteger</span> _weight;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//  1. @property 的简单使用</span></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *name;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> age;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> height;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> weight;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">JQPerson</span></span></div><div class="line"></div><div class="line"><span class="comment">//  2. @synthesize 的使用</span></div><div class="line"><span class="comment">//  2.1 默认生成"_"开头的成员变量， 即：</span></div><div class="line"><span class="keyword">@synthesize</span> name = _name;</div><div class="line"><span class="comment">//  2.2 生成与 @property 相同的不带下划线的成员变量：</span></div><div class="line"><span class="keyword">@synthesize</span> age;</div><div class="line"><span class="comment">//  2.3 指定生成的成员变量名：</span></div><div class="line"><span class="keyword">@synthesize</span> height = H;</div><div class="line"></div><div class="line"><span class="comment">//  3. @dynamic 的使用</span></div><div class="line"><span class="keyword">@dynamic</span> weight;</div><div class="line"><span class="comment">//  3.2 实现 getter/setter 方法（这里只是简单的实现）：</span></div><div class="line">- (<span class="keyword">void</span>)setWeight:(<span class="built_in">NSInteger</span>)weight &#123;</div><div class="line">    _weight = weight;</div><div class="line">&#125;</div><div class="line">- (<span class="built_in">NSInteger</span>)weight &#123;</div><div class="line">    <span class="keyword">return</span> _weight;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+<p><strong><em>（Tips：在都没有使用 @synthesize 以及 @dynamic 时，默认为 <code>@synthesize propertyName = _propertyName;</code>。但若是同时实现了 getter&amp;setter 方法，则隐含表示为 <code>@dynamic propertyName;</code> 因此编译器并不会自动生成成员变量，此时若是使用成员变量则会出现 “Use undeclared identifier” 错误。解决方法可以在类的声明中自主添加私有的成员变量，或者使用 @synthesize，告知编译器自动生成成员变量。）</em></strong></p>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/08/16/git-code/" itemprop="url">
-              
-                <span itemprop="name">Git 常用指令记录</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-16T19:10:41+08:00"
-              content="2016-08-16" >
-          08-16
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/＠property/" rel="tag">#＠property</a>
+          
+            <a href="/tags/＠synthesize/" rel="tag">#＠synthesize</a>
+          
+            <a href="/tags/＠dynamic/" rel="tag">#＠dynamic</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/22/Alcatraz/" rel="next" title="Alcatraz 的安装与使用">
+                <i class="fa fa-chevron-left"></i> Alcatraz 的安装与使用
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/08/16/git-code/" rel="prev" title="Git 常用指令记录">
+                Git 常用指令记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
+      
+    </div>
+  </div>
 
 
           </div>
@@ -299,6 +478,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/08/09/@property_@synthesize_@dynamic/"
+           data-title="＠property 、 ＠synthesize 与 ＠dynamic 的作用" data-url="https://coder-zjq.github.io/2016/08/09/@property_@synthesize_@dynamic/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -318,8 +505,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460"
@@ -369,6 +565,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -488,6 +695,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
