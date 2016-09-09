@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="SVN," />
 
 
 
@@ -84,12 +84,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="ZJQ's Blog">
-<meta property="og:url" content="https://coder-zjq.github.io/categories/Technology/Development-Tool/Alcatraz/index.html">
+<meta name="description" content="创建代码库$ svnadmin create /Users/Joker/svn/MyRepo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SVN 的简单使用">
+<meta property="og:url" content="https://coder-zjq.github.io/2016/09/08/SVN/index.html">
 <meta property="og:site_name" content="ZJQ's Blog">
+<meta property="og:description" content="创建代码库$ svnadmin create /Users/Joker/svn/MyRepo">
+<meta property="og:updated_time" content="2016-09-08T03:18:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ZJQ's Blog">
+<meta name="twitter:title" content="SVN 的简单使用">
+<meta name="twitter:description" content="创建代码库$ svnadmin create /Users/Joker/svn/MyRepo">
 
 
 
@@ -110,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="https://coder-zjq.github.io/categories/Technology/Development-Tool/Alcatraz/"/>
+  <link rel="canonical" href="https://coder-zjq.github.io/2016/09/08/SVN/"/>
 
-  <title> 分类: Alcatraz | ZJQ's Blog </title>
+  <title> SVN 的简单使用 | ZJQ's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -251,47 +255,214 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        Alcatraz
-        <small>分类</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                SVN 的简单使用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-08T09:55:09+08:00" content="2016-09-08">
+              2016-09-08
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/" itemprop="url" rel="index">
+                    <span itemprop="name">Technology</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Development-Tool/" itemprop="url" rel="index">
+                    <span itemprop="name">Development Tool</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Development-Tool/SVN/" itemprop="url" rel="index">
+                    <span itemprop="name">SVN</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/08/SVN/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/08/SVN/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <h3 id="创建代码库"><a href="#创建代码库" class="headerlink" title="创建代码库"></a>创建代码库</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svnadmin create /Users/Joker/svn/MyRepo</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="设置代码库权限以及相关配置"><a href="#设置代码库权限以及相关配置" class="headerlink" title="设置代码库权限以及相关配置"></a>设置代码库权限以及相关配置</h3><p>修改代码库文件夹下的 <code>conf/svnserve.conf</code> 文件<br><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ vi /Users/Joker/svn/MyRepo/conf/svnserve.conf</div></pre></td></tr></table></figure></p>
+<p>删除以下几项前的 <code>#</code> 号，表示代码库可读可写，用户密码等配置在 <code>passwd</code> 文件，授权信息在 <code>authz</code> 文件<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line"># anon-access = read  </div><div class="line"># auth-access = write  </div><div class="line"># password-db = passwd  </div><div class="line"># authz-db = authz</div></pre></td></tr></table></figure></p>
+<h3 id="配置用户密码等信息"><a href="#配置用户密码等信息" class="headerlink" title="配置用户密码等信息"></a>配置用户密码等信息</h3><p>编辑代码库文件夹下的 <code>conf/passwd</code> 文件<br><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ vi /Users/Joker/svn/MyRepo/conf/passwd</div></pre></td></tr></table></figure></p>
+<p>在 <code>[users]</code> 标签下添加用户信息，表示账号为：zjq，密码为：123<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">[users]</div><div class="line">zjq = 123</div></pre></td></tr></table></figure></p>
+<h3 id="配置用户组或用户权限"><a href="#配置用户组或用户权限" class="headerlink" title="配置用户组或用户权限"></a>配置用户组或用户权限</h3><p>编辑代码库文件夹下的 <code>conf/authz</code> 文件<br><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ vi /Users/Joker/svn/MyRepo/conf/authz</div></pre></td></tr></table></figure></p>
+<p>可以将若干用户分为一组，统一配置权限，<code>[/]</code> 表示代码库下所有文件，<code>rw</code> 表示可读可写<br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">[groups]</div><div class="line">group1 = zjq, joker</div><div class="line"></div><div class="line">[/]</div><div class="line">@group1 = rw</div></pre></td></tr></table></figure></p>
+<p>也可以单独给用户配置权限，注意给用户单独配置权限不需要 <code>@</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">[/]</div><div class="line">zjq = rw</div></pre></td></tr></table></figure></p>
+<h3 id="启动-SVN-服务器"><a href="#启动-SVN-服务器" class="headerlink" title="启动 SVN 服务器"></a>启动 SVN 服务器</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svnserve <span class="_">-d</span> -r /Users/Joker/svn/MyRepo</div></pre></td></tr></table></figure>
+<h3 id="使用-SVN"><a href="#使用-SVN" class="headerlink" title="使用 SVN"></a>使用 SVN</h3><h4 id="从本地导入代码至服务器"><a href="#从本地导入代码至服务器" class="headerlink" title="从本地导入代码至服务器"></a>从本地导入代码至服务器</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn import [file-path] [server-path] --username=zjq --password=123 -m <span class="string">"initialize"</span></div></pre></td></tr></table></figure>
+<h4 id="从服务器下载代码至本地代码库"><a href="#从服务器下载代码至本地代码库" class="headerlink" title="从服务器下载代码至本地代码库"></a>从服务器下载代码至本地代码库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn checkout [server-path] --username=zjq --password=123 [repo-path]</div></pre></td></tr></table></figure>
+<h4 id="提交修改至服务器"><a href="#提交修改至服务器" class="headerlink" title="提交修改至服务器"></a>提交修改至服务器</h4><figure class="highlight plain"><table><tr><td class="code"><pre><div class="line">$ svn commit -m &quot;modified the file&quot;</div></pre></td></tr></table></figure>
+<h4 id="更新服务器代码至本地代码库"><a href="#更新服务器代码至本地代码库" class="headerlink" title="更新服务器代码至本地代码库"></a>更新服务器代码至本地代码库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn update</div></pre></td></tr></table></figure>
+<h4 id="查看帮助信息"><a href="#查看帮助信息" class="headerlink" title="查看帮助信息"></a>查看帮助信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn <span class="built_in">help</span></div></pre></td></tr></table></figure>
 
-      <h1 class="post-title">
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/04/22/Alcatraz/" itemprop="url">
-              
-                <span itemprop="name">Alcatraz 的安装与使用</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-22T22:25:48+08:00"
-              content="2016-04-22" >
-          04-22
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SVN/" rel="tag">#SVN</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/09/06/MJExtension/" rel="next" title="MJExtension 的使用">
+                <i class="fa fa-chevron-left"></i> MJExtension 的使用
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
 
+      
+    </div>
+  </div>
 
 
           </div>
@@ -299,6 +470,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/08/SVN/"
+           data-title="SVN 的简单使用" data-url="https://coder-zjq.github.io/2016/09/08/SVN/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -318,8 +497,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460"
@@ -369,6 +557,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建代码库"><span class="nav-number">1.</span> <span class="nav-text">创建代码库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置代码库权限以及相关配置"><span class="nav-number">2.</span> <span class="nav-text">设置代码库权限以及相关配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置用户密码等信息"><span class="nav-number">3.</span> <span class="nav-text">配置用户密码等信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置用户组或用户权限"><span class="nav-number">4.</span> <span class="nav-text">配置用户组或用户权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动-SVN-服务器"><span class="nav-number">5.</span> <span class="nav-text">启动 SVN 服务器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用-SVN"><span class="nav-number">6.</span> <span class="nav-text">使用 SVN</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#从本地导入代码至服务器"><span class="nav-number">6.1.</span> <span class="nav-text">从本地导入代码至服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#从服务器下载代码至本地代码库"><span class="nav-number">6.2.</span> <span class="nav-text">从服务器下载代码至本地代码库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#提交修改至服务器"><span class="nav-number">6.3.</span> <span class="nav-text">提交修改至服务器</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新服务器代码至本地代码库"><span class="nav-number">6.4.</span> <span class="nav-text">更新服务器代码至本地代码库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#查看帮助信息"><span class="nav-number">6.5.</span> <span class="nav-text">查看帮助信息</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -488,6 +687,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

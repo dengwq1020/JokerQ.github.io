@@ -1,0 +1,876 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="MJExtension,JSON," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="Define the models// Define JQPerson model#import &amp;lt;Foundation/Foundation.h&amp;gt;@class JQChild;typedef NS_ENUM(NSInteger, JQSex) &amp;#123;    JQSexMale = 0,    JQSexFemale,    JQSexUnknown&amp;#125;;@interfa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MJExtension 的使用">
+<meta property="og:url" content="https://coder-zjq.github.io/2016/09/06/MJExtension/index.html">
+<meta property="og:site_name" content="ZJQ's Blog">
+<meta property="og:description" content="Define the models// Define JQPerson model#import &amp;lt;Foundation/Foundation.h&amp;gt;@class JQChild;typedef NS_ENUM(NSInteger, JQSex) &amp;#123;    JQSexMale = 0,    JQSexFemale,    JQSexUnknown&amp;#125;;@interfa">
+<meta property="og:updated_time" content="2016-09-09T08:39:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MJExtension 的使用">
+<meta name="twitter:description" content="Define the models// Define JQPerson model#import &amp;lt;Foundation/Foundation.h&amp;gt;@class JQChild;typedef NS_ENUM(NSInteger, JQSex) &amp;#123;    JQSexMale = 0,    JQSexFemale,    JQSexUnknown&amp;#125;;@interfa">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="https://coder-zjq.github.io/2016/09/06/MJExtension/"/>
+
+  <title> MJExtension 的使用 | ZJQ's Blog </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">ZJQ's Blog</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '3sn3CRW2tUp3Kduce-we','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                MJExtension 的使用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-06T14:42:31+08:00" content="2016-09-06">
+              2016-09-06
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/" itemprop="url" rel="index">
+                    <span itemprop="name">Technology</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Programming-Language/" itemprop="url" rel="index">
+                    <span itemprop="name">Programming Language</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Technology/Programming-Language/Objective-C/" itemprop="url" rel="index">
+                    <span itemprop="name">Objective-C</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/06/MJExtension/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/06/MJExtension/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+              &nbsp; | &nbsp;
+              <span class="page-pv"><i class="fa fa-file-o"></i>
+              <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+              </span>
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="Define-the-models"><a href="#Define-the-models" class="headerlink" title="Define the models"></a>Define the models</h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Define JQPerson model</span></div><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"><span class="class"><span class="keyword">@class</span> <span class="title">JQChild</span>;</span></div><div class="line"></div><div class="line"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSInteger</span>, JQSex) &#123;</div><div class="line">    JQSexMale = <span class="number">0</span>,</div><div class="line">    JQSexFemale,</div><div class="line">    JQSexUnknown</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQPerson</span> : <span class="title">NSObject</span></span></div><div class="line"></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *name;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> age;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) JQSex sex;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *address;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>, <span class="keyword">getter</span>=isMarried) <span class="built_in">BOOL</span> marriage;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) JQChild *child;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="comment">/**************************************************************/</span></div><div class="line"></div><div class="line"><span class="comment">// Define JQChild model</span></div><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQChild</span> : <span class="title">NSObject</span></span></div><div class="line"></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *name;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> age;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="JSON-gt-Model-mj-objectWithKeyValues"><a href="#JSON-gt-Model-mj-objectWithKeyValues" class="headerlink" title="JSON -&gt; Model: + mj_objectWithKeyValues"></a>JSON -&gt; Model: <code>+ mj_objectWithKeyValues</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Define a JSON dictionary</span></div><div class="line"><span class="built_in">NSDictionary</span> *personDict = @&#123;</div><div class="line">                                 <span class="string">@"name"</span>:<span class="string">@"zjq"</span>,</div><div class="line">                                 <span class="string">@"age"</span>:@(<span class="number">24</span>),</div><div class="line">                                 <span class="string">@"sex"</span>:@(JQSexMale),</div><div class="line">                                 <span class="string">@"address"</span>:<span class="string">@"FuZhou"</span>,</div><div class="line">                                 <span class="string">@"marriage"</span>:<span class="string">@"false"</span></div><div class="line">                                 &#125;;</div><div class="line"></div><div class="line"><span class="comment">// JSON -&gt; JQPerson</span></div><div class="line">JQPerson *person = [JQPerson mj_objectWithKeyValues:personDict];</div><div class="line"></div><div class="line"><span class="comment">// Print</span></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"name:%@, age:%ld, sex:%ld, address:%@, marriage:%d."</span>, person.name, person.age, person.sex, person.address, person.marriage);</div><div class="line"><span class="comment">// name:zjq, age:24, sex:0, address:FuZhou, marriage:0.</span></div></pre></td></tr></table></figure>
+<h3 id="JSONString-gt-Model-mj-objectWithKeyValues"><a href="#JSONString-gt-Model-mj-objectWithKeyValues" class="headerlink" title="JSONString -&gt; Model: + mj_objectWithKeyValues"></a>JSONString -&gt; Model: <code>+ mj_objectWithKeyValues</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Define a JSON string</span></div><div class="line"><span class="built_in">NSString</span> *personStr = <span class="string">@"&#123;\"name\":\"zjq\", \"age\":24, \"sex\":0, \"address\":\"FuZhou\", \"marriage\":\"false\"&#125;"</span>;</div><div class="line"></div><div class="line"><span class="comment">// JSONString -&gt; Model</span></div><div class="line">JQPerson *person = [JQPerson mj_objectWithKeyValues:personDict]; </div><div class="line"></div><div class="line"><span class="comment">// Print   </span></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"name:%@, age:%ld, sex:%ld, address:%@, marriage:%d."</span>, person.name, person.age, person.sex, person.address, person.marriage);</div><div class="line"><span class="comment">// name:zjq, age:24, sex:0, address:FuZhou, marriage:0.</span></div></pre></td></tr></table></figure>
+<h3 id="Model-contains-model-mj-objectWithKeyValues"><a href="#Model-contains-model-mj-objectWithKeyValues" class="headerlink" title="Model contains model: + mj_objectWithKeyValues"></a>Model contains model: <code>+ mj_objectWithKeyValues</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Define a JSON dictionary</span></div><div class="line"><span class="built_in">NSDictionary</span> *personDict = @&#123;</div><div class="line">                                 <span class="string">@"name"</span>:<span class="string">@"zjt"</span>,</div><div class="line">                                 <span class="string">@"age"</span>:@(<span class="number">31</span>),</div><div class="line">                                 <span class="string">@"sex"</span>:@(JQSexMale),</div><div class="line">                                 <span class="string">@"address"</span>:<span class="string">@"FuZhou"</span>,</div><div class="line">                                 <span class="string">@"marriage"</span>:<span class="string">@"true"</span>,</div><div class="line">                                 <span class="string">@"child"</span>:@&#123;</div><div class="line">                                         <span class="string">@"name"</span>:<span class="string">@"zje"</span>,</div><div class="line">                                         <span class="string">@"age"</span>:@(<span class="number">2</span>)</div><div class="line">                                         &#125;</div><div class="line">                                 &#125;;</div><div class="line"></div><div class="line"><span class="comment">// JSON -&gt; JQPerson</span></div><div class="line">JQPerson *person = [JQPerson mj_objectWithKeyValues:personDict];  </div><div class="line"></div><div class="line"><span class="comment">// Print </span></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"name:%@, age:%ld, sex:%ld, address:%@, marriage:%d, childname:%@, childage:%ld."</span>, person.name, person.age, person.sex, person.address, person.marriage, person.child.name, person.child.age);</div><div class="line"><span class="comment">// name:zjt, age:31, sex:0, address:FuZhou, marriage:1, childname:zje, childage:2.</span></div></pre></td></tr></table></figure>
+<h3 id="Model-gt-JSON-mj-keyValues"><a href="#Model-gt-JSON-mj-keyValues" class="headerlink" title="Model -&gt; JSON: - mj_keyValues"></a>Model -&gt; JSON: <code>- mj_keyValues</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// New model</span></div><div class="line">User *user = [[User alloc] init];</div><div class="line">user.name = <span class="string">@"Jack"</span>;</div><div class="line">user.icon = <span class="string">@"lufy.png"</span>;</div><div class="line"></div><div class="line">Status *status = [[Status alloc] init];</div><div class="line">status.user = user;</div><div class="line">status.text = <span class="string">@"Nice mood!"</span>;</div><div class="line"></div><div class="line"><span class="comment">// Status -&gt; JSON</span></div><div class="line"><span class="built_in">NSDictionary</span> *statusDict = status.mj_keyValues;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, statusDict);</div><div class="line"><span class="comment">/*</span></div><div class="line"> &#123;</div><div class="line"> text = "Nice mood!";</div><div class="line"> user =     &#123;</div><div class="line"> icon = "lufy.png";</div><div class="line"> name = Jack;</div><div class="line"> &#125;;</div><div class="line"> &#125;</div><div class="line"> */</div><div class="line"></div><div class="line"><span class="comment">// More complex situation</span></div><div class="line">Student *stu = [[Student alloc] init];</div><div class="line">stu.ID = <span class="string">@"123"</span>;</div><div class="line">stu.oldName = <span class="string">@"rose"</span>;</div><div class="line">stu.nowName = <span class="string">@"jack"</span>;</div><div class="line">stu.desc = <span class="string">@"handsome"</span>;</div><div class="line">stu.nameChangedTime = <span class="string">@"2018-09-08"</span>;</div><div class="line"></div><div class="line">Bag *bag = [[Bag alloc] init];</div><div class="line">bag.name = <span class="string">@"a red bag"</span>;</div><div class="line">bag.price = <span class="number">205</span>;</div><div class="line">stu.bag = bag;</div><div class="line"></div><div class="line"><span class="built_in">NSDictionary</span> *stuDict = stu.mj_keyValues;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, stuDict);</div><div class="line"><span class="comment">/*</span></div><div class="line">&#123;</div><div class="line">    ID = 123;</div><div class="line">    bag =     &#123;</div><div class="line">        name = "\U5c0f\U4e66\U5305";</div><div class="line">        price = 205;</div><div class="line">    &#125;;</div><div class="line">    desc = handsome;</div><div class="line">    nameChangedTime = "2018-09-08";</div><div class="line">    nowName = jack;</div><div class="line">    oldName = rose;</div><div class="line">&#125;</div><div class="line"> */</div></pre></td></tr></table></figure>
+<h3 id="Model-contains-model-array-mj-objectClassInArray-mj-setupObjectClassInArray"><a href="#Model-contains-model-array-mj-objectClassInArray-mj-setupObjectClassInArray" class="headerlink" title="Model contains model array: + mj_objectClassInArray; + mj_setupObjectClassInArray:;"></a>Model contains model array: <code>+ mj_objectClassInArray; + mj_setupObjectClassInArray:;</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Change The child model to childs array</span></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQPerson</span> : <span class="title">NSObject</span></span></div><div class="line"></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *name;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> age;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) JQSex sex;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *address;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>, <span class="keyword">getter</span>=isMarried) <span class="built_in">BOOL</span> marriage;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="built_in">NSArray</span> *childs;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="comment">// JQPerson.m implements +mj_objectClassInArray method to tell MJExtension what type model will be contained in childs</span></div><div class="line">+ (<span class="built_in">NSDictionary</span> *)mj_objectClassInArray &#123;</div><div class="line">    <span class="keyword">return</span> @&#123;</div><div class="line">             <span class="string">@"childs"</span>:<span class="string">@"JQChild"</span></div><div class="line">             &#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Or setup by this before serialization</span></div><div class="line">[JQPerson mj_setupObjectClassInArray:^<span class="built_in">NSDictionary</span> *&#123;</div><div class="line">        <span class="keyword">return</span> @&#123;<span class="string">@"childs"</span>:<span class="string">@"JQChild"</span>&#125;;</div><div class="line">    &#125;];</div><div class="line"></div><div class="line"><span class="comment">/**************************************************************/</span></div><div class="line"></div><div class="line"><span class="comment">// Define a JSON dictionary</span></div><div class="line"><span class="built_in">NSDictionary</span> *personDict = @&#123;</div><div class="line">                             <span class="string">@"name"</span>:<span class="string">@"zjt"</span>,</div><div class="line">                             <span class="string">@"age"</span>:@(<span class="number">31</span>),</div><div class="line">                             <span class="string">@"sex"</span>:@(JQSexMale),</div><div class="line">                             <span class="string">@"address"</span>:<span class="string">@"FuZhou"</span>,</div><div class="line">                             <span class="string">@"marriage"</span>:<span class="string">@"true"</span>,</div><div class="line">                             <span class="string">@"childs"</span>:@[@&#123;</div><div class="line">                                            <span class="string">@"name"</span>:<span class="string">@"zje"</span>,</div><div class="line">                                            <span class="string">@"age"</span>:@(<span class="number">2</span>)</div><div class="line">                                            &#125;,</div><div class="line">                                        @&#123;</div><div class="line">                                            <span class="string">@"name"</span>:<span class="string">@"zjj"</span>,</div><div class="line">                                            <span class="string">@"age"</span>:@(<span class="number">4</span>)</div><div class="line">                                            &#125;]</div><div class="line">                             &#125;;</div><div class="line"></div><div class="line"><span class="comment">// JSON -&gt; Model</span></div><div class="line">JQPerson *person = [JQPerson mj_objectWithKeyValues:personDict];</div><div class="line"></div><div class="line"><span class="comment">// Print</span></div><div class="line"><span class="keyword">for</span> (JQChild *child <span class="keyword">in</span> person.childs) &#123;</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"childname:%@, childage:%ld\n"</span>, child.name, child.age);</div><div class="line">&#125;</div><div class="line"><span class="comment">// childname:zje, childage:2</span></div><div class="line"><span class="comment">// childname:zjj, childage:4</span></div></pre></td></tr></table></figure>
+<h3 id="JSON-array-gt-model-array-mj-objectArrayWithKeyValuesArray"><a href="#JSON-array-gt-model-array-mj-objectArrayWithKeyValuesArray" class="headerlink" title="JSON array -&gt; model array: + mj_objectArrayWithKeyValuesArray"></a>JSON array -&gt; model array: <code>+ mj_objectArrayWithKeyValuesArray</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="built_in">NSArray</span> *dictArray = @[</div><div class="line">                         @&#123;</div><div class="line">                             <span class="string">@"name"</span> : <span class="string">@"Jack"</span>,</div><div class="line">                             <span class="string">@"icon"</span> : <span class="string">@"lufy.png"</span></div><div class="line">                         &#125;,</div><div class="line">                         @&#123;</div><div class="line">                             <span class="string">@"name"</span> : <span class="string">@"Rose"</span>,</div><div class="line">                             <span class="string">@"icon"</span> : <span class="string">@"nami.png"</span></div><div class="line">                         &#125;</div><div class="line">                     ];</div><div class="line"></div><div class="line"><span class="comment">// JSON array -&gt; User array</span></div><div class="line"><span class="built_in">NSArray</span> *userArray = [User mj_objectArrayWithKeyValuesArray:dictArray];</div><div class="line"></div><div class="line"><span class="comment">// Printing</span></div><div class="line"><span class="keyword">for</span> (User *user <span class="keyword">in</span> userArray) &#123;</div><div class="line">    <span class="built_in">NSLog</span>(<span class="string">@"name=%@, icon=%@"</span>, user.name, user.icon);</div><div class="line">&#125;</div><div class="line"><span class="comment">// name=Jack, icon=lufy.png</span></div><div class="line"><span class="comment">// name=Rose, icon=nami.png</span></div></pre></td></tr></table></figure>
+<h3 id="Model-array-gt-JSON-array-mj-keyValuesArrayWithObjectArray"><a href="#Model-array-gt-JSON-array-mj-keyValuesArrayWithObjectArray" class="headerlink" title="Model array -&gt; JSON array: + mj_keyValuesArrayWithObjectArray"></a>Model array -&gt; JSON array: <code>+ mj_keyValuesArrayWithObjectArray</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// New model array</span></div><div class="line">User *user1 = [[User alloc] init];</div><div class="line">user1.name = <span class="string">@"Jack"</span>;</div><div class="line">user1.icon = <span class="string">@"lufy.png"</span>;</div><div class="line"></div><div class="line">User *user2 = [[User alloc] init];</div><div class="line">user2.name = <span class="string">@"Rose"</span>;</div><div class="line">user2.icon = <span class="string">@"nami.png"</span>;</div><div class="line"></div><div class="line"><span class="built_in">NSArray</span> *userArray = @[user1, user2];</div><div class="line"></div><div class="line"><span class="comment">// Model array -&gt; JSON array</span></div><div class="line"><span class="built_in">NSArray</span> *dictArray = [User mj_keyValuesArrayWithObjectArray:userArray];</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"%@"</span>, dictArray);</div><div class="line"><span class="comment">/*</span></div><div class="line"> (</div><div class="line"> &#123;</div><div class="line"> icon = "lufy.png";</div><div class="line"> name = Jack;</div><div class="line"> &#125;,</div><div class="line"> &#123;</div><div class="line"> icon = "nami.png";</div><div class="line"> name = Rose;</div><div class="line"> &#125;</div><div class="line"> )</div><div class="line"> */</div></pre></td></tr></table></figure>
+<h3 id="Model-name-JSON-key-mapping-mj-replacedKeyFromPropertyName-mj-setupReplacedKeyFromPropertyName"><a href="#Model-name-JSON-key-mapping-mj-replacedKeyFromPropertyName-mj-setupReplacedKeyFromPropertyName" class="headerlink" title="Model name - JSON key mapping: + mj_replacedKeyFromPropertyName; + mj_setupReplacedKeyFromPropertyName;"></a>Model name - JSON key mapping: <code>+ mj_replacedKeyFromPropertyName; + mj_setupReplacedKeyFromPropertyName;</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Change the childs array to childname string</span></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQPerson</span> : <span class="title">NSObject</span></span></div><div class="line"></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *name;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> age;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) JQSex sex;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *address;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>, <span class="keyword">getter</span>=isMarried) <span class="built_in">BOOL</span> marriage;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *childname;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="comment">// JQPerson.m implements +mj_replacedKeyFromPropertyName method to tell MJExtension how to map</span></div><div class="line">+ (<span class="built_in">NSDictionary</span> *)mj_replacedKeyFromPropertyName &#123;</div><div class="line">    <span class="keyword">return</span> @&#123;<span class="string">@"childname"</span>:<span class="string">@"child.name"</span>&#125;;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// Or setup by this before serialization</span></div><div class="line">[JQPerson mj_setupReplacedKeyFromPropertyName:^<span class="built_in">NSDictionary</span> *&#123;</div><div class="line">        <span class="keyword">return</span> @&#123;<span class="string">@"childname"</span>:<span class="string">@"child.name"</span>&#125;;</div><div class="line">    &#125;];</div><div class="line"></div><div class="line"><span class="comment">/**************************************************************/</span></div><div class="line"></div><div class="line"><span class="comment">// Define a JSON dictionary</span></div><div class="line"><span class="built_in">NSDictionary</span> *personDict = @&#123;</div><div class="line">                                 <span class="string">@"name"</span>:<span class="string">@"zjt"</span>,</div><div class="line">                                 <span class="string">@"age"</span>:@(<span class="number">31</span>),</div><div class="line">                                 <span class="string">@"sex"</span>:@(JQSexMale),</div><div class="line">                                 <span class="string">@"address"</span>:<span class="string">@"FuZhou"</span>,</div><div class="line">                                 <span class="string">@"marriage"</span>:<span class="string">@"true"</span>,</div><div class="line">                                 <span class="string">@"child"</span>:@&#123;</div><div class="line">                                         <span class="string">@"name"</span>:<span class="string">@"zje"</span>,</div><div class="line">                                         <span class="string">@"age"</span>:@(<span class="number">2</span>)</div><div class="line">                                         &#125;</div><div class="line">                                 &#125;;</div><div class="line"></div><div class="line"><span class="comment">// JSON -&gt; JQPerson</span></div><div class="line">JQPerson *person = [JQPerson mj_objectWithKeyValues:personDict];   </div><div class="line"></div><div class="line"><span class="comment">// Print </span></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"childname:%@"</span>, person.childname);</div><div class="line"><span class="comment">// childname:zje</span></div></pre></td></tr></table></figure>
+<h3 id="NSCoding-MJExtensionCodingImplementation-mj-setupIgnoredCodingPropertyNames"><a href="#NSCoding-MJExtensionCodingImplementation-mj-setupIgnoredCodingPropertyNames" class="headerlink" title="NSCoding: MJExtensionCodingImplementation, + mj_setupIgnoredCodingPropertyNames:;"></a>NSCoding: <code>MJExtensionCodingImplementation, + mj_setupIgnoredCodingPropertyNames:;</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">"MJExtension.h"</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Bag</span></span></div><div class="line"><span class="comment">// NSCoding Implementation</span></div><div class="line">MJExtensionCodingImplementation</div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="comment">/***********************************************/</span></div><div class="line"></div><div class="line"><span class="comment">// what properties not to be coded</span></div><div class="line">[Bag mj_setupIgnoredCodingPropertyNames:^<span class="built_in">NSArray</span> *&#123;</div><div class="line">    <span class="keyword">return</span> @[<span class="string">@"name"</span>];</div><div class="line">&#125;];</div><div class="line"><span class="comment">// Equals: Bag.m implements +mj_ignoredCodingPropertyNames method.</span></div><div class="line"></div><div class="line"><span class="comment">// Create model</span></div><div class="line">Bag *bag = [[Bag alloc] init];</div><div class="line">bag.name = <span class="string">@"Red bag"</span>;</div><div class="line">bag.price = <span class="number">200.8</span>;</div><div class="line"></div><div class="line"><span class="built_in">NSString</span> *file = [<span class="built_in">NSHomeDirectory</span>() stringByAppendingPathComponent:<span class="string">@"Desktop/bag.data"</span>];</div><div class="line"><span class="comment">// Encoding</span></div><div class="line">[<span class="built_in">NSKeyedArchiver</span> archiveRootObject:bag toFile:file];</div><div class="line"></div><div class="line"><span class="comment">// Decoding</span></div><div class="line">Bag *decodedBag = [<span class="built_in">NSKeyedUnarchiver</span> unarchiveObjectWithFile:file];</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"name=%@, price=%f"</span>, decodedBag.name, decodedBag.price);</div><div class="line"><span class="comment">// name=(null), price=200.800000</span></div></pre></td></tr></table></figure>
+<h3 id="NSString-gt-NSDate-nil-gt-””-mj-newValueFromOldValue-property"><a href="#NSString-gt-NSDate-nil-gt-””-mj-newValueFromOldValue-property" class="headerlink" title="NSString -&gt; NSDate, nil -&gt; @””: - mj_newValueFromOldValue:property:"></a>NSString -&gt; NSDate, nil -&gt; @””: <code>- mj_newValueFromOldValue:property:</code></h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="comment">// Book</span></div><div class="line"><span class="meta">#import <span class="meta-string">"MJExtension.h"</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Book</span></span></div><div class="line">- (<span class="keyword">id</span>)mj_newValueFromOldValue:(<span class="keyword">id</span>)oldValue property:(MJProperty *)property</div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> ([property.name isEqualToString:<span class="string">@"publisher"</span>]) &#123;</div><div class="line">        <span class="keyword">if</span> (oldValue == <span class="literal">nil</span>) <span class="keyword">return</span> <span class="string">@""</span>;</div><div class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (property.type.typeClass == [<span class="built_in">NSDate</span> <span class="keyword">class</span>]) &#123;</div><div class="line">        <span class="built_in">NSDateFormatter</span> *fmt = [[<span class="built_in">NSDateFormatter</span> alloc] init];</div><div class="line">        fmt.dateFormat = <span class="string">@"yyyy-MM-dd"</span>;</div><div class="line">        <span class="keyword">return</span> [fmt dateFromString:oldValue];</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="keyword">return</span> oldValue;</div><div class="line">&#125;</div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="comment">// NSDictionary</span></div><div class="line"><span class="built_in">NSDictionary</span> *dict = @&#123;</div><div class="line">                       <span class="string">@"name"</span> : <span class="string">@"5分钟突破iOS开发"</span>,</div><div class="line">                       <span class="string">@"publishedTime"</span> : <span class="string">@"2011-09-10"</span></div><div class="line">                       &#125;;</div><div class="line"><span class="comment">// NSDictionary -&gt; Book</span></div><div class="line">Book *book = [Book mj_objectWithKeyValues:dict];</div><div class="line"></div><div class="line"><span class="comment">// printing</span></div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"name=%@, publisher=%@, publishedTime=%@"</span>, book.name, book.publisher, book.publishedTime);</div></pre></td></tr></table></figure>
+<hr>
+<p><a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="external">MJExtension</a></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/MJExtension/" rel="tag">#MJExtension</a>
+          
+            <a href="/tags/JSON/" rel="tag">#JSON</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/30/UIWebView/" rel="next" title="UIWebView 的简单使用">
+                <i class="fa fa-chevron-left"></i> UIWebView 的简单使用
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/09/08/SVN/" rel="prev" title="SVN 的简单使用">
+                SVN 的简单使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/06/MJExtension/"
+           data-title="MJExtension 的使用" data-url="https://coder-zjq.github.io/2016/09/06/MJExtension/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460"
+               alt="ZJQ" />
+          <p class="site-author-name" itemprop="name">ZJQ</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">13</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">17</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Define-the-models"><span class="nav-number">1.</span> <span class="nav-text">Define the models</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSON-gt-Model-mj-objectWithKeyValues"><span class="nav-number">2.</span> <span class="nav-text">JSON -> Model: + mj_objectWithKeyValues</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSONString-gt-Model-mj-objectWithKeyValues"><span class="nav-number">3.</span> <span class="nav-text">JSONString -> Model: + mj_objectWithKeyValues</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-contains-model-mj-objectWithKeyValues"><span class="nav-number">4.</span> <span class="nav-text">Model contains model: + mj_objectWithKeyValues</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-gt-JSON-mj-keyValues"><span class="nav-number">5.</span> <span class="nav-text">Model -> JSON: - mj_keyValues</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-contains-model-array-mj-objectClassInArray-mj-setupObjectClassInArray"><span class="nav-number">6.</span> <span class="nav-text">Model contains model array: + mj_objectClassInArray; + mj_setupObjectClassInArray:;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JSON-array-gt-model-array-mj-objectArrayWithKeyValuesArray"><span class="nav-number">7.</span> <span class="nav-text">JSON array -> model array: + mj_objectArrayWithKeyValuesArray</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-array-gt-JSON-array-mj-keyValuesArrayWithObjectArray"><span class="nav-number">8.</span> <span class="nav-text">Model array -> JSON array: + mj_keyValuesArrayWithObjectArray</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-name-JSON-key-mapping-mj-replacedKeyFromPropertyName-mj-setupReplacedKeyFromPropertyName"><span class="nav-number">9.</span> <span class="nav-text">Model name - JSON key mapping: + mj_replacedKeyFromPropertyName; + mj_setupReplacedKeyFromPropertyName;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NSCoding-MJExtensionCodingImplementation-mj-setupIgnoredCodingPropertyNames"><span class="nav-number">10.</span> <span class="nav-text">NSCoding: MJExtensionCodingImplementation, + mj_setupIgnoredCodingPropertyNames:;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NSString-gt-NSDate-nil-gt-””-mj-newValueFromOldValue-property"><span class="nav-number">11.</span> <span class="nav-text">NSString -> NSDate, nil -> @””: - mj_newValueFromOldValue:property:</span></a></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy;  2015 - 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ZJQ</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+<div class="busuanzi-count">
+
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
+  
+
+  
+    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
+  
+  
+</div>
+
+
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"coder-zjq"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+    <script src="/js/src/hook-duoshuo.js"></script>
+  
+
+
+
+
+
+
+  
+  
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    // Search DB path;
+    var search_path = "search.xmlsearch";
+    if (search_path.length == 0) {
+       search_path = "search.xml";
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    function proceedsearch() {
+      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $('.popup').toggle();
+
+    }
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+    'use strict';
+    $.ajax({
+        url: path,
+        dataType: "xml",
+        async: true,
+        success: function( xmlResponse ) {
+            // get the contents from search data
+            isfetched = true;
+            $('.popup').detach().appendTo('.header-inner');
+            var datas = $( "entry", xmlResponse ).map(function() {
+                return {
+                    title: $( "title", this ).text(),
+                    content: $("content",this).text(),
+                    url: $( "url" , this).text()
+                };
+            }).get();
+            var $input = document.getElementById(search_id);
+            var $resultContent = document.getElementById(content_id);
+            $input.addEventListener('input', function(){
+                var matchcounts = 0;
+                var str='<ul class=\"search-result-list\">';
+                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                $resultContent.innerHTML = "";
+                if (this.value.trim().length > 1) {
+                // perform local searching
+                datas.forEach(function(data) {
+                    var isMatch = true;
+                    var content_index = [];
+                    var data_title = data.title.trim().toLowerCase();
+                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                    var data_url = data.url;
+                    var index_title = -1;
+                    var index_content = -1;
+                    var first_occur = -1;
+                    // only match artiles with not empty titles and contents
+                    if(data_title != '' && data_content != '') {
+                        keywords.forEach(function(keyword, i) {
+                            index_title = data_title.indexOf(keyword);
+                            index_content = data_content.indexOf(keyword);
+                            if( index_title < 0 && index_content < 0 ){
+                                isMatch = false;
+                            } else {
+                                if (index_content < 0) {
+                                    index_content = 0;
+                                }
+                                if (i == 0) {
+                                    first_occur = index_content;
+                                }
+                            }
+                        });
+                    }
+                    // show search results
+                    if (isMatch) {
+                        matchcounts += 1;
+                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        var content = data.content.trim().replace(/<[^>]+>/g,"");
+                        if (first_occur >= 0) {
+                            // cut out 100 characters
+                            var start = first_occur - 20;
+                            var end = first_occur + 80;
+                            if(start < 0){
+                                start = 0;
+                            }
+                            if(start == 0){
+                                end = 50;
+                            }
+                            if(end > content.length){
+                                end = content.length;
+                            }
+                            var match_content = content.substring(start, end);
+                            // highlight all keywords
+                            keywords.forEach(function(keyword){
+                                var regS = new RegExp(keyword, "gi");
+                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                            });
+
+                            str += "<p class=\"search-result\">" + match_content +"...</p>"
+                        }
+                        str += "</li>";
+                    }
+                })};
+                str += "</ul>";
+                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+                $resultContent.innerHTML = str;
+            });
+            proceedsearch();
+        }
+    });}
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched == false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+
+    });
+
+    $('.popup-btn-close').click(function(e){
+      $('.popup').hide();
+      $(".popoverlay").remove();
+      $('body').css('overflow', '');
+    });
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+  </script>
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
