@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -102,7 +102,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Pisces',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -214,7 +214,7 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="javascript:;" class="st-search-show-outputs">
+            <a href="javascript:;" class="popup-trigger">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -229,19 +229,12 @@
   
     <div class="site-search">
       
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', '3sn3CRW2tUp3Kduce-we','2.0.0');
-</script>
-
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
 
 
     </div>
@@ -373,7 +366,7 @@
       
 
       
-        <h3 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, StyleSheet, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      &lt;View&gt;</div><div class="line">      &lt;Text style=&#123;styles.justRed&#125;&gt;just red text&lt;/Text&gt;</div><div class="line">      &lt;Text style=&#123;styles.bigGreen&#125;&gt;just big green text&lt;/Text&gt;</div><div class="line">      &lt;Text style=&#123;[styles.bigGreen, styles.justRed]&#125;&gt;big green then red text&lt;/Text&gt;</div><div class="line">      &lt;Text style=&#123;[styles.justRed, styles.bigGreen]&#125;&gt;red then big green text&lt;/Text&gt;</div><div class="line">      &lt;/View&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> styles = StyleSheet.create(&#123;</div><div class="line">    <span class="attr">bigGreen</span> : &#123;</div><div class="line">        <span class="attr">color</span> : <span class="string">'#00ff00'</span>,</div><div class="line">        <span class="attr">fontWeight</span> : <span class="string">'bold'</span>,</div><div class="line">        <span class="attr">fontSize</span> : <span class="number">25</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">justRed</span> : &#123;</div><div class="line">        <span class="attr">color</span> : <span class="string">'red'</span>,</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
+        <h3 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, StyleSheet, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      <span class="xml"><span class="tag">&lt;<span class="name">View</span>&gt;</span></span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;styles.justRed&#125;</span>&gt;</span>just red text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;styles.bigGreen&#125;</span>&gt;</span>just big green text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;[styles.bigGreen,</span> <span class="attr">styles.justRed</span>]&#125;&gt;</span>big green then red text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;[styles.justRed,</span> <span class="attr">styles.bigGreen</span>]&#125;&gt;</span>red then big green text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">View</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> styles = StyleSheet.create(&#123;</div><div class="line">    <span class="attr">bigGreen</span> : &#123;</div><div class="line">        <span class="attr">color</span> : <span class="string">'#00ff00'</span>,</div><div class="line">        <span class="attr">fontWeight</span> : <span class="string">'bold'</span>,</div><div class="line">        <span class="attr">fontSize</span> : <span class="number">25</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">justRed</span> : &#123;</div><div class="line">        <span class="attr">color</span> : <span class="string">'red'</span>,</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>More info about Text style: <a href="http://facebook.github.io/react-native/docs/text.html" target="_blank" rel="external">Text component reference</a></p>
 <p><img src="http://ww4.sinaimg.cn/large/801b780agw1f8gi0x8d5jj20ae03yjru.jpg" alt="20:15:56.jpg"></p>
@@ -513,7 +506,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -521,7 +514,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -530,7 +523,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -592,7 +585,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Mist
   </a>
 </div>
 
@@ -673,13 +666,6 @@
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>

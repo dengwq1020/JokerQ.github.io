@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -84,41 +84,23 @@
 
 
 
-<meta name="description" content="基本使用帮助信息$ svn help$ svn help help
-导入数据至你的远程版本库
-导入文件和目录
-$ svn import [file-path] [svn-path] -m &quot;[message]&quot;
-
-推荐的版本库布局
-$ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list file://">
+<meta name="description" content="基本使用帮助信息$ svn help$ svn help help">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SVN 常用指令">
 <meta property="og:url" content="https://coder-zjq.github.io/2016/09/15/SVN-code/index.html">
 <meta property="og:site_name" content="ZJQ's Blog">
-<meta property="og:description" content="基本使用帮助信息$ svn help$ svn help help
-导入数据至你的远程版本库
-导入文件和目录
-$ svn import [file-path] [svn-path] -m &quot;[message]&quot;
-
-推荐的版本库布局
-$ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list file://">
-<meta property="og:updated_time" content="2016-09-16T00:41:43.000Z">
+<meta property="og:description" content="基本使用帮助信息$ svn help$ svn help help">
+<meta property="og:updated_time" content="2016-11-17T01:12:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SVN 常用指令">
-<meta name="twitter:description" content="基本使用帮助信息$ svn help$ svn help help
-导入数据至你的远程版本库
-导入文件和目录
-$ svn import [file-path] [svn-path] -m &quot;[message]&quot;
-
-推荐的版本库布局
-$ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list file://">
+<meta name="twitter:description" content="基本使用帮助信息$ svn help$ svn help help">
 
 
 
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Pisces',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -230,7 +212,7 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
       
         <li class="menu-item menu-item-search">
           
-            <a href="javascript:;" class="st-search-show-outputs">
+            <a href="javascript:;" class="popup-trigger">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -245,19 +227,12 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
   
     <div class="site-search">
       
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', '3sn3CRW2tUp3Kduce-we','2.0.0');
-</script>
-
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
 
 
     </div>
@@ -347,6 +322,7 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
 
       
         <h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><h4 id="帮助信息"><a href="#帮助信息" class="headerlink" title="帮助信息"></a>帮助信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn <span class="built_in">help</span></div><div class="line">$ svn <span class="built_in">help</span> <span class="built_in">help</span></div></pre></td></tr></table></figure>
+<a id="more"></a>
 <h4 id="导入数据至你的远程版本库"><a href="#导入数据至你的远程版本库" class="headerlink" title="导入数据至你的远程版本库"></a>导入数据至你的远程版本库</h4><ul>
 <li><p>导入文件和目录</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn import [file-path] [svn-path] -m <span class="string">"[message]"</span></div></pre></td></tr></table></figure>
@@ -492,7 +468,7 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">24</span>
+              <span class="site-state-item-count">30</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -500,7 +476,7 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -509,7 +485,7 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">20</span>
+                <span class="site-state-item-count">22</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -571,7 +547,7 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Mist
   </a>
 </div>
 
@@ -652,13 +628,6 @@ $ svn list file:///var/svn/single-project-repotrunk/branches/tags/$ svn list fil
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
