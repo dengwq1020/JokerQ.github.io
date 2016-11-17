@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[JS 输出]]></title>
       <url>https://coder-zjq.github.io/2016/10/29/JS-%E8%BE%93%E5%87%BA/</url>
-      <content type="html"><![CDATA[<h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML=<span class="string">"My First JavaScript"</span>;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">document.getElementById("demo").innerHTML="My First JavaScript";</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 ]]></content>
     </entry>
     
@@ -197,15 +197,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[RN(2) Hello World again]]></title>
-      <url>https://coder-zjq.github.io/2016/10/02/RN(2)_Hello_World_again/</url>
-      <content type="html"><![CDATA[<h3 id="Hello-World-again"><a href="#Hello-World-again" class="headerlink" title="Hello World again"></a>Hello World again</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">Text</span>&gt;</span></span></div><div class="line">          Hello World!</div><div class="line">        <span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[RN(1) Build The Environment]]></title>
       <url>https://coder-zjq.github.io/2016/10/02/RN(1)_Build_The_Environment/</url>
       <content type="html"><![CDATA[<h3 id="搭建开发环境"><a href="#搭建开发环境" class="headerlink" title="搭建开发环境"></a>搭建开发环境</h3><ul>
@@ -229,6 +220,15 @@
 </li>
 </ul>
 <p><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4g5mg9hj20g90a6jtd.jpg" alt="15:40:37.jpg"><br><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4gfp9vyj20af0j50t6.jpg" alt="15:40:54.jpg"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[RN(2) Hello World again]]></title>
+      <url>https://coder-zjq.github.io/2016/10/02/RN(2)_Hello_World_again/</url>
+      <content type="html"><![CDATA[<h3 id="Hello-World-again"><a href="#Hello-World-again" class="headerlink" title="Hello World again"></a>Hello World again</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">Text</span>&gt;</span></span></div><div class="line">          Hello World!</div><div class="line">        <span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
 ]]></content>
     </entry>
     
