@@ -4,9 +4,11 @@
   
     
     <entry>
-      <title><![CDATA[JS 输出]]></title>
-      <url>https://coder-zjq.github.io/2016/10/29/JS-%E8%BE%93%E5%87%BA/</url>
-      <content type="html"><![CDATA[<h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">document.getElementById("demo").innerHTML="My First JavaScript";</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+      <title><![CDATA[用 yarn 代替 npm 管理 React-Native 包依赖]]></title>
+      <url>https://coder-zjq.github.io/2016/11/22/change-npm-to-yarn/</url>
+      <content type="html"><![CDATA[<h3 id="首先得安装-yarn，可参考Yarn-Installation-on-macOS"><a href="#首先得安装-yarn，可参考Yarn-Installation-on-macOS" class="headerlink" title="首先得安装 yarn，可参考Yarn Installation on macOS"></a>首先得安装 yarn，可参考<a href="http://coder-zjq.me/2016/10/13/yarn-installation/" target="_blank" rel="external">Yarn Installation on macOS</a></h3><h3 id="在命令行中输入："><a href="#在命令行中输入：" class="headerlink" title="在命令行中输入："></a>在命令行中输入：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn global add react-native-cli</div></pre></td></tr></table></figure>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-22-143436.jpg" alt="yarn global add react-native-cli"></p>
+<h3 id="之后使用-react-native-init-就是用-yarn-来下载包："><a href="#之后使用-react-native-init-就是用-yarn-来下载包：" class="headerlink" title="之后使用 react-native init 就是用 yarn 来下载包："></a>之后使用 react-native init 就是用 yarn 来下载包：</h3><p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-22-143004.jpg" alt="react-native init"></p>
 ]]></content>
     </entry>
     
@@ -17,12 +19,6 @@
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/801b780agw1f94h878nkij20af0j5t9c.jpg" alt="14:01:53.jpg"></p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[install-react-native-tools]]></title>
-      <url>https://coder-zjq.github.io/2016/10/23/install-react-native-tools/</url>
-      <content type="html"></content>
     </entry>
     
     <entry>
@@ -197,6 +193,15 @@
     </entry>
     
     <entry>
+      <title><![CDATA[RN(2) Hello World again]]></title>
+      <url>https://coder-zjq.github.io/2016/10/02/RN(2)_Hello_World_again/</url>
+      <content type="html"><![CDATA[<h3 id="Hello-World-again"><a href="#Hello-World-again" class="headerlink" title="Hello World again"></a>Hello World again</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">Text</span>&gt;</span></span></div><div class="line">          Hello World!</div><div class="line">        <span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[RN(1) Build The Environment]]></title>
       <url>https://coder-zjq.github.io/2016/10/02/RN(1)_Build_The_Environment/</url>
       <content type="html"><![CDATA[<h3 id="搭建开发环境"><a href="#搭建开发环境" class="headerlink" title="搭建开发环境"></a>搭建开发环境</h3><ul>
@@ -220,15 +225,6 @@
 </li>
 </ul>
 <p><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4g5mg9hj20g90a6jtd.jpg" alt="15:40:37.jpg"><br><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4gfp9vyj20af0j50t6.jpg" alt="15:40:54.jpg"></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[RN(2) Hello World again]]></title>
-      <url>https://coder-zjq.github.io/2016/10/02/RN(2)_Hello_World_again/</url>
-      <content type="html"><![CDATA[<h3 id="Hello-World-again"><a href="#Hello-World-again" class="headerlink" title="Hello World again"></a>Hello World again</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">Text</span>&gt;</span></span></div><div class="line">          Hello World!</div><div class="line">        <span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
 ]]></content>
     </entry>
     
@@ -264,7 +260,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[POP]]></title>
+      <title><![CDATA[pop]]></title>
       <url>https://coder-zjq.github.io/2016/09/10/POP/</url>
       <content type="html"></content>
     </entry>
@@ -642,6 +638,13 @@
 <p><img src="http://ww1.sinaimg.cn/large/801b780agw1f6yp3x2y04j20go0cat9b.jpg" alt="插件界面"></p>
 <p><a href="https://github.com/duiyueliu/iOS-Images-Extractor-master" target="_blank" rel="external">项目地址</a><br><a href="https://pan.baidu.com/s/1dFNrF4P" target="_blank" rel="external">插件地址</a></p>
 <p><em>（注意，抽取的素材仅供学习，不要用于其他商业用途）</em></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[JS 输出]]></title>
+      <url>https://coder-zjq.github.io/2015/10/29/JS-%E8%BE%93%E5%87%BA/</url>
+      <content type="html"><![CDATA[<h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML=<span class="string">"My First JavaScript"</span>;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 ]]></content>
     </entry>
     
