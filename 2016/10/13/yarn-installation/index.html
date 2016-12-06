@@ -84,19 +84,29 @@
 
 
 
-<meta name="description" content="首先得安装 Node.js最简单的通过脚本安装$ curl -o- -L https://yarnpkg.com/install.sh | bash">
+<meta name="description" content="macOSHomebrew你可以通过 Homebrew package manager，这同时会安装 Node.js 如果没有安装的话。
+$ brew update$ brew install yarn
+设置 Path 环境变量你需要通过你的终端设置 Path 环境变量，使 Yarn 的执行包可以全局访问。
+在你的配置文件（可能是你的 .profile,.bashrc,.zshrc文件，等等。）里">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Yarn Installation on macOS">
+<meta property="og:title" content="Yarn Installation">
 <meta property="og:url" content="https://coder-zjq.github.io/2016/10/13/yarn-installation/index.html">
 <meta property="og:site_name" content="ZJQ's Blog">
-<meta property="og:description" content="首先得安装 Node.js最简单的通过脚本安装$ curl -o- -L https://yarnpkg.com/install.sh | bash">
+<meta property="og:description" content="macOSHomebrew你可以通过 Homebrew package manager，这同时会安装 Node.js 如果没有安装的话。
+$ brew update$ brew install yarn
+设置 Path 环境变量你需要通过你的终端设置 Path 环境变量，使 Yarn 的执行包可以全局访问。
+在你的配置文件（可能是你的 .profile,.bashrc,.zshrc文件，等等。）里">
+<meta property="og:image" content="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-23-011736.jpg">
 <meta property="og:image" content="http://ww3.sinaimg.cn/large/65e4f1e6gw1f8ql5fz45bj20fu04rq56.jpg">
 <meta property="og:image" content="http://ww1.sinaimg.cn/large/65e4f1e6gw1f8ql84cm8fj208x00q0ss.jpg">
-<meta property="og:updated_time" content="2016-11-22T14:42:37.000Z">
+<meta property="og:updated_time" content="2016-11-23T02:36:14.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yarn Installation on macOS">
-<meta name="twitter:description" content="首先得安装 Node.js最简单的通过脚本安装$ curl -o- -L https://yarnpkg.com/install.sh | bash">
-<meta name="twitter:image" content="http://ww3.sinaimg.cn/large/65e4f1e6gw1f8ql5fz45bj20fu04rq56.jpg">
+<meta name="twitter:title" content="Yarn Installation">
+<meta name="twitter:description" content="macOSHomebrew你可以通过 Homebrew package manager，这同时会安装 Node.js 如果没有安装的话。
+$ brew update$ brew install yarn
+设置 Path 环境变量你需要通过你的终端设置 Path 环境变量，使 Yarn 的执行包可以全局访问。
+在你的配置文件（可能是你的 .profile,.bashrc,.zshrc文件，等等。）里">
+<meta name="twitter:image" content="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-23-011736.jpg">
 
 
 
@@ -119,7 +129,7 @@
 
   <link rel="canonical" href="https://coder-zjq.github.io/2016/10/13/yarn-installation/"/>
 
-  <title> Yarn Installation on macOS | ZJQ's Blog </title>
+  <title> Yarn Installation | ZJQ's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +282,7 @@
             
             
               
-                Yarn Installation on macOS
+                Yarn Installation
               
             
           </h1>
@@ -367,8 +377,27 @@
       
 
       
-        <h2 id="首先得安装-Node-js"><a href="#首先得安装-Node-js" class="headerlink" title="首先得安装 Node.js"></a>首先得安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></h2><h3 id="最简单的通过脚本安装"><a href="#最简单的通过脚本安装" class="headerlink" title="最简单的通过脚本安装"></a>最简单的通过脚本安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl -o- -L https://yarnpkg.com/install.sh | bash</div></pre></td></tr></table></figure>
-<p><img src="http://ww3.sinaimg.cn/large/65e4f1e6gw1f8ql5fz45bj20fu04rq56.jpg" alt="QQ20161013-0.png"><br><a id="more"></a></p>
+        <h2 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h2><h3 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h3><p>你可以通过 <a href="http://brew.sh/" target="_blank" rel="external">Homebrew package manager</a>，这同时会安装 Node.js 如果没有安装的话。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ brew update</div><div class="line">$ brew install yarn</div></pre></td></tr></table></figure>
+<h3 id="设置-Path-环境变量"><a href="#设置-Path-环境变量" class="headerlink" title="设置 Path 环境变量"></a>设置 Path 环境变量</h3><p>你需要通过你的终端设置 <code>Path</code> 环境变量，使 Yarn 的执行包可以全局访问。</p>
+<p>在你的配置文件（可能是你的 <code>.profile</code>,<code>.bashrc</code>,<code>.zshrc</code>文件，等等。）里加入 <code>export PATH=&quot;$PATH:yarn global bin&quot;</code></p>
+<a id="more"></a>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>在 Windows 上有两种可选的方式来安装 Yarn。</p>
+<h3 id="下载安装包"><a href="#下载安装包" class="headerlink" title="下载安装包"></a>下载安装包</h3><p>下载安装包你会得到一个 <code>.msi</code> 文件，运行该文件会指引你安装 Yarn。</p>
+<p>如果你通过安装包安装，你需先安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>。</p>
+<p><a style="color:white; background-color:#2c8ebb; border-color:#2c8ebb; display: inline-block; font-weight: normal; line-height: 1.25;text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; user-select: none; border: 1px solid transparent;  padding: .5rem 1rem; font-size: 1rem;  border-radius: .25rem;" href="https://yarnpkg.com/latest.msi" target="_blank" rel="external">点击下载安装包</a></p>
+<h3 id="通过-Chocolatey-安装"><a href="#通过-Chocolatey-安装" class="headerlink" title="通过 Chocolatey 安装"></a>通过 Chocolatey 安装</h3><p><a href="https://chocolatey.org/" target="_blank" rel="external">Chocolatey</a> 是 Windows 上的包管理工具，你可以通过<a href="https://chocolatey.org/install" target="_blank" rel="external">这里的指示</a>安装 Chocolatey.</p>
+<p>如果你已经安装了 Chocolatey，你可以通过在你的命令行你运行如下代码来安装 Yarn:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">choco install yarn</div></pre></td></tr></table></figure>
+<p>这同样得确保你已经安装了 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>.</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>你需要清空你的文件夹以及防病毒软件里的 Yarn 缓存目录（ %LocalAppData%\Yarn ） ，否则安装包时会特别慢，因为每个文件在写入硬盘时都会被扫描。</p>
+<hr>
+<p>可以在终端运行如下命令测试 Yarn 是否已安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn --version</div></pre></td></tr></table></figure>
+<p>安装成功的话则会显示 Yarn 安装的版本信息：</p>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-23-011736.jpg" alt="Yarn version"></p>
+<h3 id="首先得安装-Node-js"><a href="#首先得安装-Node-js" class="headerlink" title="首先得安装 Node.js"></a>首先得安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></h3><h3 id="最简单的通过脚本安装"><a href="#最简单的通过脚本安装" class="headerlink" title="最简单的通过脚本安装"></a>最简单的通过脚本安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl -o- -L https://yarnpkg.com/install.sh | bash</div></pre></td></tr></table></figure>
+<p><img src="http://ww3.sinaimg.cn/large/65e4f1e6gw1f8ql5fz45bj20fu04rq56.jpg" alt="QQ20161013-0.png"></p>
 <h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install --global yarn</div></pre></td></tr></table></figure>
 <h3 id="Manual"><a href="#Manual" class="headerlink" title="Manual"></a>Manual</h3><p>You can install Yarn by <a href="https://yarnpkg.com/latest.tar.gz" target="_blank" rel="external">downloading a tarball</a> and extracting it anywhere.<br><strong><em>OR</em></strong><br><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># install wget first</span></div><div class="line">$ <span class="built_in">cd</span> /opt</div><div class="line">$ wget https://yarnpkg.com/latest.tar.gz</div><div class="line">$ tar zvxf yarn-*.tar.gz</div><div class="line"><span class="comment"># Yarn is now in /opt/yarn-[version]/</span></div></pre></td></tr></table></figure></p>
 <h3 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn --version</div></pre></td></tr></table></figure>
@@ -467,7 +496,7 @@
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/10/13/yarn-installation/"
-           data-title="Yarn Installation on macOS" data-url="https://coder-zjq.github.io/2016/10/13/yarn-installation/">
+           data-title="Yarn Installation" data-url="https://coder-zjq.github.io/2016/10/13/yarn-installation/">
       </div>
     
   </div>
@@ -512,7 +541,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">31</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -520,7 +549,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">37</span>
+                <span class="site-state-item-count">21</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -529,7 +558,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">29</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -558,7 +587,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#首先得安装-Node-js"><span class="nav-number">1.</span> <span class="nav-text">首先得安装 Node.js</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#最简单的通过脚本安装"><span class="nav-number">1.1.</span> <span class="nav-text">最简单的通过脚本安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm"><span class="nav-number">1.2.</span> <span class="nav-text">npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Manual"><span class="nav-number">1.3.</span> <span class="nav-text">Manual</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test"><span class="nav-number">1.4.</span> <span class="nav-text">Test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uninstall"><span class="nav-number">1.5.</span> <span class="nav-text">Uninstall</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#macOS"><span class="nav-number">1.</span> <span class="nav-text">macOS</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Homebrew"><span class="nav-number">1.1.</span> <span class="nav-text">Homebrew</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置-Path-环境变量"><span class="nav-number">1.2.</span> <span class="nav-text">设置 Path 环境变量</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows"><span class="nav-number">2.</span> <span class="nav-text">Windows</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载安装包"><span class="nav-number">2.1.</span> <span class="nav-text">下载安装包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#通过-Chocolatey-安装"><span class="nav-number">2.2.</span> <span class="nav-text">通过 Chocolatey 安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意"><span class="nav-number">2.3.</span> <span class="nav-text">注意</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#首先得安装-Node-js"><span class="nav-number">2.4.</span> <span class="nav-text">首先得安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最简单的通过脚本安装"><span class="nav-number">2.5.</span> <span class="nav-text">最简单的通过脚本安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#npm"><span class="nav-number">2.6.</span> <span class="nav-text">npm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Manual"><span class="nav-number">2.7.</span> <span class="nav-text">Manual</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Test"><span class="nav-number">2.8.</span> <span class="nav-text">Test</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Uninstall"><span class="nav-number">2.9.</span> <span class="nav-text">Uninstall</span></a></li></ol></li></ol></div>
             
           </div>
         </section>

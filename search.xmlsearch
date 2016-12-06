@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title><![CDATA[科学上网（超简单）]]></title>
+      <url>https://coder-zjq.github.io/2016/12/06/how-to-fly-over-the-great-wall/</url>
+      <content type="html"><![CDATA[<ol>
+<li>找到对应平台的 Hosts <a href="https://github.com/racaljk/hosts/wiki/%E5%90%84%E5%B9%B3%E5%8F%B0-hosts-%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE" target="_blank" rel="external">文件位置</a></li>
+<li>备份你的 Hosts 文件</li>
+<li>下载对应平台的<a href="https://github.com/racaljk/hosts/blob/master/tools" target="_blank" rel="external">更新工具</a></li>
+<li>下载 <a href="https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts" target="_blank" rel="external">Hosts 镜像</a></li>
+<li>使用下载的更新工具更新 Hosts</li>
+</ol>
+<p>e.g.</p>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-06-modifyHosts.gif" alt=""></p>
+<p>Have fun…</p>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-06-result.gif" alt=""></p>
+<hr>
+<p>想了解更多可查看：<a href="https://github.com/racaljk/hosts/blob/master/README.md" target="_blank" rel="external">https://github.com/racaljk/hosts/blob/master/README.md</a></p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[用 yarn 代替 npm 管理 React-Native 包依赖]]></title>
       <url>https://coder-zjq.github.io/2016/11/22/change-npm-to-yarn/</url>
       <content type="html"><![CDATA[<h3 id="首先得安装-yarn，可参考Yarn-Installation-on-macOS"><a href="#首先得安装-yarn，可参考Yarn-Installation-on-macOS" class="headerlink" title="首先得安装 yarn，可参考Yarn Installation on macOS"></a>首先得安装 yarn，可参考<a href="http://coder-zjq.me/2016/10/13/yarn-installation/" target="_blank" rel="external">Yarn Installation on macOS</a></h3><h3 id="在命令行中输入："><a href="#在命令行中输入：" class="headerlink" title="在命令行中输入："></a>在命令行中输入：</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn global add react-native-cli</div></pre></td></tr></table></figure>
@@ -99,10 +118,29 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Yarn Installation on macOS]]></title>
+      <title><![CDATA[Yarn Installation]]></title>
       <url>https://coder-zjq.github.io/2016/10/13/yarn-installation/</url>
-      <content type="html"><![CDATA[<h2 id="首先得安装-Node-js"><a href="#首先得安装-Node-js" class="headerlink" title="首先得安装 Node.js"></a>首先得安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></h2><h3 id="最简单的通过脚本安装"><a href="#最简单的通过脚本安装" class="headerlink" title="最简单的通过脚本安装"></a>最简单的通过脚本安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl -o- -L https://yarnpkg.com/install.sh | bash</div></pre></td></tr></table></figure>
-<p><img src="http://ww3.sinaimg.cn/large/65e4f1e6gw1f8ql5fz45bj20fu04rq56.jpg" alt="QQ20161013-0.png"><br><a id="more"></a></p>
+      <content type="html"><![CDATA[<h2 id="macOS"><a href="#macOS" class="headerlink" title="macOS"></a>macOS</h2><h3 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h3><p>你可以通过 <a href="http://brew.sh/" target="_blank" rel="external">Homebrew package manager</a>，这同时会安装 Node.js 如果没有安装的话。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ brew update</div><div class="line">$ brew install yarn</div></pre></td></tr></table></figure>
+<h3 id="设置-Path-环境变量"><a href="#设置-Path-环境变量" class="headerlink" title="设置 Path 环境变量"></a>设置 Path 环境变量</h3><p>你需要通过你的终端设置 <code>Path</code> 环境变量，使 Yarn 的执行包可以全局访问。</p>
+<p>在你的配置文件（可能是你的 <code>.profile</code>,<code>.bashrc</code>,<code>.zshrc</code>文件，等等。）里加入 <code>export PATH=&quot;$PATH:yarn global bin&quot;</code></p>
+<a id="more"></a>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>在 Windows 上有两种可选的方式来安装 Yarn。</p>
+<h3 id="下载安装包"><a href="#下载安装包" class="headerlink" title="下载安装包"></a>下载安装包</h3><p>下载安装包你会得到一个 <code>.msi</code> 文件，运行该文件会指引你安装 Yarn。</p>
+<p>如果你通过安装包安装，你需先安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>。</p>
+<p><a style="color:white; background-color:#2c8ebb; border-color:#2c8ebb; display: inline-block; font-weight: normal; line-height: 1.25;text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; user-select: none; border: 1px solid transparent;  padding: .5rem 1rem; font-size: 1rem;  border-radius: .25rem;" href="https://yarnpkg.com/latest.msi" target="_blank" rel="external">点击下载安装包</a></p>
+<h3 id="通过-Chocolatey-安装"><a href="#通过-Chocolatey-安装" class="headerlink" title="通过 Chocolatey 安装"></a>通过 Chocolatey 安装</h3><p><a href="https://chocolatey.org/" target="_blank" rel="external">Chocolatey</a> 是 Windows 上的包管理工具，你可以通过<a href="https://chocolatey.org/install" target="_blank" rel="external">这里的指示</a>安装 Chocolatey.</p>
+<p>如果你已经安装了 Chocolatey，你可以通过在你的命令行你运行如下代码来安装 Yarn:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">choco install yarn</div></pre></td></tr></table></figure>
+<p>这同样得确保你已经安装了 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>.</p>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>你需要清空你的文件夹以及防病毒软件里的 Yarn 缓存目录（ %LocalAppData%\Yarn ） ，否则安装包时会特别慢，因为每个文件在写入硬盘时都会被扫描。</p>
+<hr>
+<p>可以在终端运行如下命令测试 Yarn 是否已安装成功：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn --version</div></pre></td></tr></table></figure>
+<p>安装成功的话则会显示 Yarn 安装的版本信息：</p>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-23-011736.jpg" alt="Yarn version"></p>
+<h3 id="首先得安装-Node-js"><a href="#首先得安装-Node-js" class="headerlink" title="首先得安装 Node.js"></a>首先得安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></h3><h3 id="最简单的通过脚本安装"><a href="#最简单的通过脚本安装" class="headerlink" title="最简单的通过脚本安装"></a>最简单的通过脚本安装</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ curl -o- -L https://yarnpkg.com/install.sh | bash</div></pre></td></tr></table></figure>
+<p><img src="http://ww3.sinaimg.cn/large/65e4f1e6gw1f8ql5fz45bj20fu04rq56.jpg" alt="QQ20161013-0.png"></p>
 <h3 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ npm install --global yarn</div></pre></td></tr></table></figure>
 <h3 id="Manual"><a href="#Manual" class="headerlink" title="Manual"></a>Manual</h3><p>You can install Yarn by <a href="https://yarnpkg.com/latest.tar.gz" target="_blank" rel="external">downloading a tarball</a> and extracting it anywhere.<br><strong><em>OR</em></strong><br><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line"><span class="comment"># install wget first</span></div><div class="line">$ <span class="built_in">cd</span> /opt</div><div class="line">$ wget https://yarnpkg.com/latest.tar.gz</div><div class="line">$ tar zvxf yarn-*.tar.gz</div><div class="line"><span class="comment"># Yarn is now in /opt/yarn-[version]/</span></div></pre></td></tr></table></figure></p>
 <h3 id="Test"><a href="#Test" class="headerlink" title="Test"></a>Test</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn --version</div></pre></td></tr></table></figure>
@@ -193,15 +231,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[RN(2) Hello World again]]></title>
-      <url>https://coder-zjq.github.io/2016/10/02/RN(2)_Hello_World_again/</url>
-      <content type="html"><![CDATA[<h3 id="Hello-World-again"><a href="#Hello-World-again" class="headerlink" title="Hello World again"></a>Hello World again</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">Text</span>&gt;</span></span></div><div class="line">          Hello World!</div><div class="line">        <span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[RN(1) Build The Environment]]></title>
       <url>https://coder-zjq.github.io/2016/10/02/RN(1)_Build_The_Environment/</url>
       <content type="html"><![CDATA[<h3 id="搭建开发环境"><a href="#搭建开发环境" class="headerlink" title="搭建开发环境"></a>搭建开发环境</h3><ul>
@@ -225,6 +254,15 @@
 </li>
 </ul>
 <p><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4g5mg9hj20g90a6jtd.jpg" alt="15:40:37.jpg"><br><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4gfp9vyj20af0j50t6.jpg" alt="15:40:54.jpg"></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[RN(2) Hello World again]]></title>
+      <url>https://coder-zjq.github.io/2016/10/02/RN(2)_Hello_World_again/</url>
+      <content type="html"><![CDATA[<h3 id="Hello-World-again"><a href="#Hello-World-again" class="headerlink" title="Hello World again"></a>Hello World again</h3><figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        <span class="xml"><span class="tag">&lt;<span class="name">Text</span>&gt;</span></span></div><div class="line">          Hello World!</div><div class="line">        <span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
 ]]></content>
     </entry>
     
