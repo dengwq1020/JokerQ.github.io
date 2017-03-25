@@ -4,6 +4,36 @@
   
     
     <entry>
+      <title><![CDATA[Xcode-Tips]]></title>
+      <url>https://coder-zjq.github.io/2016/12/21/Xcode-Tips/</url>
+      <content type="html"><![CDATA[<p>禁止 <code>documentation issue</code><br><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-21-030823.jpg" alt=""></p>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-21-031213.jpg" alt=""></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming Language </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ＠property </tag>
+            
+            <tag> ＠synthesize </tag>
+            
+            <tag> ＠dynamic </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[科学上网（超简单）]]></title>
       <url>https://coder-zjq.github.io/2016/12/06/how-to-fly-over-the-great-wall/</url>
       <content type="html"><![CDATA[<ol>
@@ -13,6 +43,7 @@
 <li>下载 <a href="https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts" target="_blank" rel="external">Hosts 镜像</a></li>
 <li>使用下载的更新工具更新 Hosts</li>
 </ol>
+<a id="more"></a>
 <p>e.g.</p>
 <p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-06-modifyHosts.gif" alt=""></p>
 <p>Have fun…</p>
@@ -20,6 +51,24 @@
 <hr>
 <p>想了解更多可查看：<a href="https://github.com/racaljk/hosts/blob/master/README.md" target="_blank" rel="external">https://github.com/racaljk/hosts/blob/master/README.md</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tips </category>
+            
+            <category> Other </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Hosts </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -29,6 +78,26 @@
 <p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-22-143436.jpg" alt="yarn global add react-native-cli"></p>
 <h3 id="之后使用-react-native-init-就是用-yarn-来下载包："><a href="#之后使用-react-native-init-就是用-yarn-来下载包：" class="headerlink" title="之后使用 react-native init 就是用 yarn 来下载包："></a>之后使用 react-native init 就是用 yarn 来下载包：</h3><p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-11-22-143004.jpg" alt="react-native init"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> Yarn </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> yarn </tag>
+            
+            <tag> npm </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -38,6 +107,26 @@
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/801b780agw1f94h878nkij20af0j5t9c.jpg" alt="14:01:53.jpg"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+            <tag> ListView </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -100,6 +189,24 @@
 </tbody>
 </table>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tips </category>
+            
+            <category> VSCode </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> VSCode </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -115,6 +222,24 @@
 <hr>
 <p><a href="https://yarnpkg.com/en/docs/usage" target="_blank" rel="external">Yarn Usage</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> Yarn </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> yarn </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -149,6 +274,24 @@
 <hr>
 <p><a href="https://yarnpkg.com/en/docs/install" target="_blank" rel="external">Yarn Installation</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> Yarn </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> yarn </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -173,6 +316,26 @@
 <figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">varFunction</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> previous = <span class="number">0</span>;</div><div class="line">  <span class="keyword">var</span> current = <span class="number">1</span>;</div><div class="line">  <span class="keyword">var</span> i;</div><div class="line">  <span class="keyword">var</span> temp;</div><div class="line">  <span class="keyword">for</span>(i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i += <span class="number">1</span>) &#123;</div><div class="line">    temp = previous;</div><div class="line">    previous = current;</div><div class="line">    current = temp + current;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// safe way</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">letFunction</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">let</span> previous = <span class="number">0</span>;</div><div class="line">  <span class="keyword">let</span> current = <span class="number">1</span>;</div><div class="line">  <span class="keyword">for</span>(<span class="keyword">let</span> i =<span class="number">0</span>; i &lt; <span class="number">10</span>; i += <span class="number">1</span>)&#123;</div><div class="line">    <span class="keyword">let</span> temp = previous;</div><div class="line">    previous = current;</div><div class="line">    current = temp + current;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>参考：<a href="http://es6.ruanyifeng.com/#docs/let" target="_blank" rel="external">let和const命令</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> ES6 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ES6 </tag>
+            
+            <tag> let </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -187,6 +350,24 @@
 <p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8gjcieq98j20af0j5mxc.jpg" alt="21:01:40.jpg"></p>
 <p>More info: <a href="http://facebook.github.io/react-native/docs/layout-props.html" target="_blank" rel="external">Layout Props</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -198,6 +379,24 @@
 <h3 id="2-Flex-Dimensions"><a href="#2-Flex-Dimensions" class="headerlink" title="2. Flex Dimensions"></a>2. Flex Dimensions</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, StyleSheet, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      &lt;View style=&#123;&#123;flex : 1&#125;&#125;&gt;</div><div class="line">        &lt;View style=&#123;styles.smallBlue&#125; /&gt;</div><div class="line">        &lt;View style=&#123;styles.middleBlue&#125; /&gt;</div><div class="line">        &lt;View style=&#123;styles.bigBlue&#125; /&gt;</div><div class="line">      &lt;/View&gt;</div><div class="line"></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">const styles = StyleSheet.create(&#123;</div><div class="line">    smallBlue : &#123;</div><div class="line">        backgroundColor : 'powderblue',</div><div class="line">        flex : 1</div><div class="line">    &#125;,</div><div class="line">    middleBlue : &#123;</div><div class="line">        backgroundColor : 'skyblue',</div><div class="line">        flex : 2</div><div class="line">    &#125;,</div><div class="line">    bigBlue : &#123;</div><div class="line">        backgroundColor : 'steelblue',</div><div class="line">        flex : 3</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent('MyFirstReactNativeProject', () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
 <p><img src="http://ww2.sinaimg.cn/large/801b780agw1f8giyymu6fj20af0j53yp.jpg" alt="20:48:39.jpg"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -208,6 +407,24 @@
 <p>More info about Text style: <a href="http://facebook.github.io/react-native/docs/text.html" target="_blank" rel="external">Text component reference</a></p>
 <p><img src="http://ww4.sinaimg.cn/large/801b780agw1f8gi0x8d5jj20ae03yjru.jpg" alt="20:15:56.jpg"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -217,6 +434,24 @@
 <a id="more"></a>
 <p><img src="http://ww2.sinaimg.cn/large/801b780agw1f8fgfoemvsg20ac03yaa4.gif" alt="animation.gif"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -228,6 +463,24 @@
 <h3 id="LotsOfGreetings"><a href="#LotsOfGreetings" class="headerlink" title="LotsOfGreetings"></a>LotsOfGreetings</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">        &lt;View style=&#123;&#123;alignItems:'center'&#125;&#125;&gt;</div><div class="line">        &lt;Greeting name='Joker'/&gt;</div><div class="line">        &lt;Greeting name='Peter'/&gt;</div><div class="line">        &lt;Greeting name='Mike'/&gt;</div><div class="line">        &lt;/View&gt;</div><div class="line">        );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">class Greeting extends Component &#123;</div><div class="line">    render() &#123;</div><div class="line">        return (</div><div class="line">            &lt;Text&gt;</div><div class="line">            Hello &#123;this.props.name&#125;! </div><div class="line">            &lt;/Text&gt;</div><div class="line">            );</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">AppRegistry.registerComponent('MyFirstReactNativeProject', () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
 <p><img src="http://ww1.sinaimg.cn/large/801b780agw1f8ffh3akxfj20ac043q32.jpg" alt="22:02:07.jpg"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -255,6 +508,24 @@
 </ul>
 <p><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4g5mg9hj20g90a6jtd.jpg" alt="15:40:37.jpg"><br><img src="http://ww4.sinaimg.cn/large/801b780agw1f8f4gfp9vyj20af0j50t6.jpg" alt="15:40:54.jpg"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -264,6 +535,24 @@
 <a id="more"></a>
 <p><img src="http://ww3.sinaimg.cn/large/801b780agw1f8feglfjvwj20af0j574g.jpg" alt="21:27:02.jpg"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> React Native </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> React Native </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -272,6 +561,26 @@
       <content type="html"><![CDATA[<h2 id="Arrow-Function-gt-in-ES6"><a href="#Arrow-Function-gt-in-ES6" class="headerlink" title="Arrow Function =&gt; in ES6"></a>Arrow Function =&gt; in ES6</h2><h3 id="Arrow-Function-syntax"><a href="#Arrow-Function-syntax" class="headerlink" title="Arrow Function syntax"></a>Arrow Function syntax</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> greet = <span class="function"><span class="keyword">function</span> (<span class="params">message, name</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> message + name;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// arrow function</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> arrowGreet1 = <span class="function">(<span class="params">message, name</span>) =&gt;</span> &#123;</div><div class="line">  <span class="keyword">return</span> message + name;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">var</span> arrowGreet2 = <span class="function">(<span class="params">message, name</span>) =&gt;</span> message + name;</div><div class="line"></div><div class="line"><span class="keyword">var</span> square = <span class="function"><span class="params">x</span> =&gt;</span> x ^ <span class="number">2</span>;</div></pre></td></tr></table></figure>
 <a id="more"></a>
 <h3 id="this-in-Arrow-Function-syntax"><a href="#this-in-Arrow-Function-syntax" class="headerlink" title="this in Arrow Function syntax"></a><code>this</code> in Arrow Function syntax</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">var</span> deliveryBoy = &#123;</div><div class="line">  <span class="attr">name</span>: <span class="string">"Joker"</span>,</div><div class="line">  <span class="attr">handleMessage</span>: <span class="function"><span class="keyword">function</span> (<span class="params">message, handler</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span> handler(message);</div><div class="line">  &#125;,</div><div class="line">  <span class="attr">receive</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> that = <span class="keyword">this</span>;</div><div class="line">    <span class="keyword">this</span>.handleMessage(<span class="string">"Hello, "</span>, <span class="function"><span class="keyword">function</span> (<span class="params">message</span>) </span>&#123;</div><div class="line">      that.name;   </div><div class="line">      <span class="built_in">console</span>.log(message + that.name);</div><div class="line">    &#125;)</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">deliveryBoy.receive();</div><div class="line"></div><div class="line"><span class="comment">// arrow function</span></div><div class="line"></div><div class="line"><span class="keyword">var</span> arrowDelieveryBoy = &#123;</div><div class="line">  <span class="attr">name</span>: <span class="string">"Joker"</span>,</div><div class="line">  <span class="attr">handleMessage</span>:  <span class="function">(<span class="params">message, handler</span>) =&gt;</span> handler(message),</div><div class="line">  <span class="attr">receive</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="keyword">this</span>.handleMessage(<span class="string">"Hello, "</span>, message =&gt; <span class="built_in">console</span>.log(message + <span class="keyword">this</span>.name));</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">arrowDelieveryBoy.receive();</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> ES6 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ES6 </tag>
+            
+            <tag> Arrow Function </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -295,12 +604,24 @@
 <h4 id="恢复修改"><a href="#恢复修改" class="headerlink" title="恢复修改"></a>恢复修改</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn revert</div></pre></td></tr></table></figure>
 <p>####</p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[pop]]></title>
-      <url>https://coder-zjq.github.io/2016/09/10/POP/</url>
-      <content type="html"></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> SVN </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> SVN </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -322,6 +643,24 @@
 <h4 id="更新服务器代码至本地代码库"><a href="#更新服务器代码至本地代码库" class="headerlink" title="更新服务器代码至本地代码库"></a>更新服务器代码至本地代码库</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn update</div></pre></td></tr></table></figure>
 <h4 id="查看帮助信息"><a href="#查看帮助信息" class="headerlink" title="查看帮助信息"></a>查看帮助信息</h4><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ svn <span class="built_in">help</span></div></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> SVN </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> SVN </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -342,6 +681,26 @@
 <hr>
 <p><a href="https://github.com/CoderMJLee/MJExtension" target="_blank" rel="external">MJExtension</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> MJExtension </tag>
+            
+            <tag> JSON </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -368,6 +727,24 @@
 <li><a href="https://github.com/marcuswestin/WebViewJavascriptBridge" target="_blank" rel="external">WebViewJavascriptBridge</a>：用于 Objective-C ↔ JavaScript 之间的交互。</li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> UIWebView </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -383,6 +760,24 @@
 <hr>
 <h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="http://ww2.sinaimg.cn/large/801b780agw1f7bs74x4ltj208w0get9f.jpg" alt="效果"></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> NJKWebViewProgress </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -406,6 +801,24 @@
 <h3 id="递归-Block"><a href="#递归-Block" class="headerlink" title="递归 Block"></a>递归 Block</h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line">__block return_type (^blockName)(var_type) = [^return_type (var_type varName)</div><div class="line">&#123;</div><div class="line">    <span class="keyword">if</span> (returnCondition)</div><div class="line">    &#123;</div><div class="line">        blockName = <span class="literal">nil</span>;</div><div class="line">        <span class="keyword">return</span>;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="comment">// Your code here...</span></div><div class="line">&#125; <span class="keyword">copy</span>];</div><div class="line">blockName(varValue);</div></pre></td></tr></table></figure>
 <h3 id="作为返回值"><a href="#作为返回值" class="headerlink" title="作为返回值"></a>作为返回值</h3><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line">- (return_type(^)(var_type))methodName</div><div class="line">&#123;</div><div class="line">    <span class="comment">// Your code here...</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="在-swift-中"><a href="#在-swift-中" class="headerlink" title="在 swift 中"></a>在 swift 中</h3><figure class="highlight swift"><table><tr><td class="code"><pre><div class="line">blockName = (varName: var_type) -&gt; (return_type)</div></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> block </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -423,6 +836,24 @@
 <p>下面的例子利用空合并运算符，在默认的颜色名以及可选的用户定义颜色名之间选择：</p>
 <figure class="highlight swift"><table><tr><td class="code"><pre><div class="line"><span class="keyword">let</span> defaultColorName = <span class="string">"red"</span></div><div class="line"><span class="keyword">var</span> userDefinedColorName: <span class="type">String</span>?   <span class="comment">// userDefinedColorName默认为nil</span></div><div class="line"><span class="keyword">var</span> colorNameToUse = userDefinedColorName ?? defaultColorName</div><div class="line"><span class="comment">// 因为userDefinedColorName为nil，因此colorNameToUse将会赋值为"red"</span></div></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> swift </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Basic Operators </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -481,6 +912,24 @@
 </li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Debug </category>
+            
+            <category> LLDB </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> LLDB </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -498,6 +947,26 @@
 <p>其实即为<code>objc_super</code>结构体。通过<code>(__rw_objc_super){(id)self, (id)class_getSuperclass(objc_getClass(&quot;JQApple&quot;))}</code>该段代码可知：我们把<code>self</code>以及<code>JQApple</code>的父类通过结构体的构造方法构造了一个<code>__rw_objc_super</code>结构体，也就是<code>objc_super</code>。因此<code>objc_super</code>结构体中的<code>receiver</code>既是<code>self</code>。所以<code>[self class]</code>和<code>[super class]</code>指向的是同一个消息接受者，只是<code>self</code>会优先从当前类的实现中寻找方法处理消息，而<code>super</code>则是会优先从<code>objc_super</code>结构体中的<code>super_class</code>也就是父类的实现中查找。<code>JQFruit</code>及<code>JQApple</code>中均未实现<code>- (Class)class;</code>方法，因此会逐级向上查找最终调用基类<code>NSObject</code>的<code>- (Class)class;</code>方法，通过官方开源的<code>NSObject</code>的<code>- (Class)class;</code>方法代码：<br><figure class="highlight objc"><table><tr><td class="code"><pre><div class="line">- (Class)<span class="keyword">class</span>&#123;</div><div class="line">    <span class="keyword">return</span> object_getClass(<span class="keyword">self</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>可知，消息接受者是<code>self</code>，而<code>[self class]</code>和<code>[super class]</code>指向的是同一个消息接受者，因此该段代码均打印<code>JQApple</code>。</p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> self </tag>
+            
+            <tag> super </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -516,6 +985,24 @@
 <hr>
 <p> 参考资料：<br><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的官方网站 - Git 教程</a><br><a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html?utm_source=tool.lu" target="_blank" rel="external">阮一峰 - 常用 Git 清单</a><br><a href="https://git-scm.com/docs" target="_blank" rel="external">git-scm</a></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> Git </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -531,6 +1018,28 @@
 <figure class="highlight objc"><table><tr><td class="code"><pre><div class="line"><span class="meta">#import <span class="meta-string">&lt;Foundation/Foundation.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">JQPerson</span> : <span class="title">NSObject</span></span></div><div class="line">&#123;</div><div class="line">    <span class="comment">//  3.1 由于 @dynamic 并不会自动生成成员变量，因此需自主添加成员变量用于 getter/setter 方法，否则会报 “Use undeclared identifier” 错误。</span></div><div class="line">    <span class="built_in">NSInteger</span> _weight;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">//  1. @property 的简单使用</span></div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">copy</span>) <span class="built_in">NSString</span> *name;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> age;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> height;</div><div class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">assign</span>) <span class="built_in">NSInteger</span> weight;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div><div class="line"></div><div class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">JQPerson</span></span></div><div class="line"></div><div class="line"><span class="comment">//  2. @synthesize 的使用</span></div><div class="line"><span class="comment">//  2.1 默认生成"_"开头的成员变量， 即：</span></div><div class="line"><span class="keyword">@synthesize</span> name = _name;</div><div class="line"><span class="comment">//  2.2 生成与 @property 相同的不带下划线的成员变量：</span></div><div class="line"><span class="keyword">@synthesize</span> age;</div><div class="line"><span class="comment">//  2.3 指定生成的成员变量名：</span></div><div class="line"><span class="keyword">@synthesize</span> height = H;</div><div class="line"></div><div class="line"><span class="comment">//  3. @dynamic 的使用</span></div><div class="line"><span class="keyword">@dynamic</span> weight;</div><div class="line"><span class="comment">//  3.2 实现 getter/setter 方法（这里只是简单的实现）：</span></div><div class="line">- (<span class="keyword">void</span>)setWeight:(<span class="built_in">NSInteger</span>)weight &#123;</div><div class="line">    _weight = weight;</div><div class="line">&#125;</div><div class="line">- (<span class="built_in">NSInteger</span>)weight &#123;</div><div class="line">    <span class="keyword">return</span> _weight;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">@end</span></div></pre></td></tr></table></figure>
 <p><strong><em>（Tips：在都没有使用 @synthesize 以及 @dynamic 时，默认为 <code>@synthesize propertyName = _propertyName;</code>。但若是同时实现了 getter&amp;setter 方法，则隐含表示为 <code>@dynamic propertyName;</code> 因此编译器并不会自动生成成员变量，此时若是使用成员变量则会出现 “Use undeclared identifier” 错误。解决方法可以在类的声明中自主添加私有的成员变量，或者使用 @synthesize，告知编译器自动生成成员变量。）</em></strong></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> Objective-C </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> ＠property </tag>
+            
+            <tag> ＠synthesize </tag>
+            
+            <tag> ＠dynamic </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -563,6 +1072,24 @@
 </li>
 </ul>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> Alcatraz </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Alcatraz </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -648,6 +1175,24 @@
 </li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tools </category>
+            
+            <category> CocoaPods </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> CocoaPods </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
@@ -677,13 +1222,49 @@
 <p><a href="https://github.com/duiyueliu/iOS-Images-Extractor-master" target="_blank" rel="external">项目地址</a><br><a href="https://pan.baidu.com/s/1dFNrF4P" target="_blank" rel="external">插件地址</a></p>
 <p><em>（注意，抽取的素材仅供学习，不要用于其他商业用途）</em></p>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Tips </category>
+            
+            <category> Other </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Extract Images </tag>
+            
+        </tags>
+        
     </entry>
     
     <entry>
       <title><![CDATA[JS 输出]]></title>
       <url>https://coder-zjq.github.io/2015/10/29/JS-%E8%BE%93%E5%87%BA/</url>
-      <content type="html"><![CDATA[<h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML=<span class="string">"My First JavaScript"</span>;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+      <content type="html"><![CDATA[<h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">document.getElementById("demo").innerHTML="My First JavaScript";</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 ]]></content>
+      
+        <categories>
+            
+            <category> Technology </category>
+            
+            <category> Programming </category>
+            
+            <category> JavaScript </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+        
     </entry>
     
   

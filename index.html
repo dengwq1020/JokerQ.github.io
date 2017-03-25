@@ -5,16 +5,19 @@
   
 
 
-<html class="theme-next pisces use-motion">
+<html class="theme-next mist use-motion" lang="en">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
 
 
 <meta http-equiv="Cache-Control" content="no-transform" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
 
 
 
@@ -63,59 +66,73 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
+  <meta name="keywords" content="ZJQ,赵金桥,Joker,coder-zjq" />
 
 
 
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
 
 
 
 
 
 
+<meta name="description" content="Always Be Coding...">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ZJQ's Blog">
 <meta property="og:url" content="https://coder-zjq.github.io/index.html">
 <meta property="og:site_name" content="ZJQ's Blog">
+<meta property="og:description" content="Always Be Coding...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ZJQ's Blog">
+<meta name="twitter:description" content="Always Be Coding...">
 
 
 
-<script type="text/javascript" id="hexo.configuration">
+<script type="text/javascript" id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
+    root: '/',
+    scheme: 'Mist',
+    sidebar: {"display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
-      author: '博主'
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
-
   <link rel="canonical" href="https://coder-zjq.github.io/"/>
+
+
+
+
 
   <title> ZJQ's Blog </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
 
   
 
@@ -123,6 +140,20 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?8e29f36fb5c5b75c8c1c895f83b737ac";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
 
 
 
@@ -130,34 +161,36 @@
 
   
   
-    
-  
 
-  <div class="container one-collumn sidebar-position-left 
+  <div class="container  
    page-home 
  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
 
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">ZJQ's Blog</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ZJQ's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
   </div>
-  <p class="site-subtitle"></p>
-</div>
 
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
 </div>
 
 <nav class="site-nav">
@@ -172,7 +205,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            首页
+            Home
           </a>
         </li>
       
@@ -182,7 +215,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
-            分类
+            Categories
           </a>
         </li>
       
@@ -192,7 +225,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            归档
+            Archives
           </a>
         </li>
       
@@ -202,7 +235,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
-            标签
+            Tags
           </a>
         </li>
       
@@ -215,7 +248,7 @@
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
             
-            搜索
+            Search
           </a>
         </li>
       
@@ -225,17 +258,30 @@
   
     <div class="site-search">
       
-  <div class="popup">
- <span class="search-icon fa fa-search"></span>
- <input type="text" id="local-search-input">
- <div id="local-search-result"></div>
- <span class="popup-btn-close">close</span>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocapitalize="off" autocomplete="off" autocorrect="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
 </div>
+
 
 
     </div>
   
 </nav>
+
+
 
  </div>
     </header>
@@ -250,6 +296,182 @@
       
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/12/21/Xcode-Tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/21/Xcode-Tips/" itemprop="url">
+                  Xcode-Tips
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-21T11:05:47+08:00">
+                2016-12-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Technology/" itemprop="url" rel="index">
+                    <span itemprop="name">Technology</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Technology/Programming-Language/" itemprop="url" rel="index">
+                    <span itemprop="name">Programming Language</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Technology/Programming-Language/Objective-C/" itemprop="url" rel="index">
+                    <span itemprop="name">Objective-C</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2016/12/21/Xcode-Tips/" class="leancloud_visitors" data-flag-title="Xcode-Tips">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>禁止 <code>documentation issue</code><br><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-21-030823.jpg" alt=""></p>
+<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-21-031213.jpg" alt=""></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
   
 
   
@@ -257,6 +479,17 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/12/06/how-to-fly-over-the-great-wall/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -278,24 +511,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-06T11:40:46+08:00" content="2016-12-06">
-              2016-12-06
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-06T11:40:46+08:00">
+                2016-12-06
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -303,11 +548,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tips/" itemprop="url" rel="index">
                     <span itemprop="name">Tips</span>
                   </a>
@@ -315,11 +559,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tips/Other/" itemprop="url" rel="index">
                     <span itemprop="name">Other</span>
                   </a>
@@ -327,28 +570,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/12/06/how-to-fly-over-the-great-wall/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/06/how-to-fly-over-the-great-wall/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/12/06/how-to-fly-over-the-great-wall/" class="leancloud_visitors" data-flag-title="科学上网（超简单）">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -361,23 +610,25 @@
 
       
         
-          
-            <ol>
-<li>找到对应平台的 Hosts <a href="https://github.com/racaljk/hosts/wiki/%E5%90%84%E5%B9%B3%E5%8F%B0-hosts-%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE" target="_blank" rel="external">文件位置</a></li>
+          <ol>
+<li>找到对应平台的 Hosts <a href="https://github.com/racaljk/hosts/wiki/%E5%90%84%E5%B9%B3%E5%8F%B0-hosts-%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE">文件位置</a></li>
 <li>备份你的 Hosts 文件</li>
-<li>下载对应平台的<a href="https://github.com/racaljk/hosts/blob/master/tools" target="_blank" rel="external">更新工具</a></li>
-<li>下载 <a href="https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts" target="_blank" rel="external">Hosts 镜像</a></li>
+<li>下载对应平台的<a href="https://github.com/racaljk/hosts/blob/master/tools">更新工具</a></li>
+<li>下载 <a href="https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts">Hosts 镜像</a></li>
 <li>使用下载的更新工具更新 Hosts</li>
 </ol>
-<p>e.g.</p>
-<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-06-modifyHosts.gif" alt=""></p>
-<p>Have fun…</p>
-<p><img src="http://ofsuv8s64.bkt.clouddn.com/blog/2016-12-06-result.gif" alt=""></p>
-<hr>
-<p>想了解更多可查看：<a href="https://github.com/racaljk/hosts/blob/master/README.md" target="_blank" rel="external">https://github.com/racaljk/hosts/blob/master/README.md</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2016/12/06/how-to-fly-over-the-great-wall/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -395,6 +646,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -406,13 +659,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/11/22/change-npm-to-yarn/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -434,24 +697,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-11-22T22:23:23+08:00" content="2016-11-22">
-              2016-11-22
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-22T22:23:23+08:00">
+                2016-11-22
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -459,11 +734,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tools/" itemprop="url" rel="index">
                     <span itemprop="name">Tools</span>
                   </a>
@@ -471,11 +745,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tools/Yarn/" itemprop="url" rel="index">
                     <span itemprop="name">Yarn</span>
                   </a>
@@ -483,28 +756,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/11/22/change-npm-to-yarn/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/11/22/change-npm-to-yarn/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/11/22/change-npm-to-yarn/" class="leancloud_visitors" data-flag-title="用 yarn 代替 npm 管理 React-Native 包依赖">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -535,7 +814,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -552,13 +837,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/25/RN(8)_Using-a-ListView/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -580,24 +875,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-25T13:57:17+08:00" content="2016-10-25">
-              2016-10-25
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-25T13:57:17+08:00">
+                2016-10-25
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -605,11 +912,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/" itemprop="url" rel="index">
                     <span itemprop="name">Programming</span>
                   </a>
@@ -617,11 +923,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/React-Native/" itemprop="url" rel="index">
                     <span itemprop="name">React Native</span>
                   </a>
@@ -629,28 +934,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/25/RN(8)_Using-a-ListView/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/25/RN(8)_Using-a-ListView/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/25/RN(8)_Using-a-ListView/" class="leancloud_visitors" data-flag-title="Using a ListView">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -664,12 +975,18 @@
       
         
           <figure class="highlight jsx"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123;</div><div class="line">  AppRegistry,</div><div class="line">  View,</div><div class="line">  Text,</div><div class="line">  Image,</div><div class="line">  ScrollView</div><div class="line">&#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="class"><span class="keyword">class</span> <span class="title">AwesomeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      &lt;ScrollView style=&#123;&#123;marginTop:20&#125;&#125;&gt;</div><div class="line">      &lt;Text style=&#123;&#123;fontSize:20&#125;&#125;&gt;</div><div class="line">      哈哈，我在上面。。。</div><div class="line">      &lt;/Text&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Text style=&#123;&#123;fontSize:20&#125;&#125;&gt;</div><div class="line">      哈哈，我在中间。。。</div><div class="line">      &lt;/Text&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Image source=&#123;require("./icon.png")&#125;/&gt;</div><div class="line">      &lt;Text style=&#123;&#123;fontSize:20&#125;&#125;&gt;</div><div class="line">      哈哈，我在下面。。。</div><div class="line">      &lt;/Text&gt;</div><div class="line">      &lt;/ScrollView&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line">AppRegistry.registerComponent('AwesomeProject', () =&gt; AwesomeProject);</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/10/25/RN(8)_Using-a-ListView/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -687,6 +1004,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -698,13 +1017,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/23/how-to-change-vscode-language/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -726,24 +1055,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-23T09:31:48+08:00" content="2016-10-23">
-              2016-10-23
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-23T09:31:48+08:00">
+                2016-10-23
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -751,11 +1092,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tips/" itemprop="url" rel="index">
                     <span itemprop="name">Tips</span>
                   </a>
@@ -763,11 +1103,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tips/VSCode/" itemprop="url" rel="index">
                     <span itemprop="name">VSCode</span>
                   </a>
@@ -775,28 +1114,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/23/how-to-change-vscode-language/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/23/how-to-change-vscode-language/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/23/how-to-change-vscode-language/" class="leancloud_visitors" data-flag-title="vscode 更改显示语言">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -880,7 +1225,13 @@
       
     </div>
 
+    <div>
+      
+    </div>
+
     <footer class="post-footer">
+      
+
       
 
       
@@ -897,13 +1248,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/13/yarn-usage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -925,24 +1286,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-13T14:05:36+08:00" content="2016-10-13">
-              2016-10-13
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-13T14:05:36+08:00">
+                2016-10-13
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -950,11 +1323,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tools/" itemprop="url" rel="index">
                     <span itemprop="name">Tools</span>
                   </a>
@@ -962,11 +1334,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tools/Yarn/" itemprop="url" rel="index">
                     <span itemprop="name">Yarn</span>
                   </a>
@@ -974,28 +1345,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/13/yarn-usage/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/13/yarn-usage/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/13/yarn-usage/" class="leancloud_visitors" data-flag-title="Yarn Usage">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -1010,12 +1387,18 @@
         
           <h3 id="初始化一个新项目"><a href="#初始化一个新项目" class="headerlink" title="初始化一个新项目"></a>初始化一个新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn init</div></pre></td></tr></table></figure>
 <h3 id="添加依赖包"><a href="#添加依赖包" class="headerlink" title="添加依赖包"></a>添加依赖包</h3><figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ yarn add [package]</div><div class="line">$ yarn add [package]@[version]</div><div class="line">$ yarn add [package]@[tag]</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/10/13/yarn-usage/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1033,6 +1416,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1044,13 +1429,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/13/yarn-installation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1072,24 +1467,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-13T13:28:17+08:00" content="2016-10-13">
-              2016-10-13
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-13T13:28:17+08:00">
+                2016-10-13
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -1097,11 +1504,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tools/" itemprop="url" rel="index">
                     <span itemprop="name">Tools</span>
                   </a>
@@ -1109,11 +1515,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Tools/Yarn/" itemprop="url" rel="index">
                     <span itemprop="name">Yarn</span>
                   </a>
@@ -1121,28 +1526,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/13/yarn-installation/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/13/yarn-installation/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/13/yarn-installation/" class="leancloud_visitors" data-flag-title="Yarn Installation">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -1159,12 +1570,18 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><div class="line">$ brew update</div><div class="line">$ brew install yarn</div></pre></td></tr></table></figure>
 <h3 id="设置-Path-环境变量"><a href="#设置-Path-环境变量" class="headerlink" title="设置 Path 环境变量"></a>设置 Path 环境变量</h3><p>你需要通过你的终端设置 <code>Path</code> 环境变量，使 Yarn 的执行包可以全局访问。</p>
 <p>在你的配置文件（可能是你的 <code>.profile</code>,<code>.bashrc</code>,<code>.zshrc</code>文件，等等。）里加入 <code>export PATH=&quot;$PATH:yarn global bin&quot;</code></p>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/10/13/yarn-installation/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1182,6 +1599,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1193,13 +1612,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/08/The_let_keyword_in ES6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1221,24 +1650,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-08T20:42:26+08:00" content="2016-10-08">
-              2016-10-08
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-08T20:42:26+08:00">
+                2016-10-08
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -1246,11 +1687,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/" itemprop="url" rel="index">
                     <span itemprop="name">Programming</span>
                   </a>
@@ -1258,11 +1698,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/ES6/" itemprop="url" rel="index">
                     <span itemprop="name">ES6</span>
                   </a>
@@ -1270,28 +1709,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/08/The_let_keyword_in ES6/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/08/The_let_keyword_in ES6/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/08/The_let_keyword_in ES6/" class="leancloud_visitors" data-flag-title="The let keyword in ES6">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -1310,12 +1755,18 @@
 <figure class="highlight javascript"><table><tr><td class="code"><pre><div class="line"><span class="comment">// use var</span></div><div class="line"><span class="keyword">var</span> fs = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">  fs.push(<span class="function"><span class="params">()</span> =&gt;</span> <span class="built_in">console</span>.log(i));</div><div class="line">&#125;</div><div class="line">fs.forEach(<span class="function"><span class="params">f</span> =&gt;</span> f());</div><div class="line"><span class="comment">// the log is:</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"><span class="comment">// 10</span></div><div class="line"></div><div class="line"><span class="comment">// use let</span></div><div class="line"><span class="keyword">var</span> fs = [];</div><div class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</div><div class="line">  fs.push(<span class="function"><span class="params">()</span> =&gt;</span> <span class="built_in">console</span>.log(i));</div><div class="line">&#125;</div><div class="line">fs.forEach(<span class="function"><span class="params">f</span> =&gt;</span> f());</div><div class="line"><span class="comment">// the log is:</span></div><div class="line"><span class="comment">// 0</span></div><div class="line"><span class="comment">// 1</span></div><div class="line"><span class="comment">// 2</span></div><div class="line"><span class="comment">// 3</span></div><div class="line"><span class="comment">// 4</span></div><div class="line"><span class="comment">// 5</span></div><div class="line"><span class="comment">// 6</span></div><div class="line"><span class="comment">// 7</span></div><div class="line"><span class="comment">// 8</span></div><div class="line"><span class="comment">// 9</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/10/08/The_let_keyword_in ES6/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1333,6 +1784,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1344,13 +1797,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/07/RN(7)_Layout_with_Flexbox/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1372,24 +1835,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-07T20:42:26+08:00" content="2016-10-07">
-              2016-10-07
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-07T20:42:26+08:00">
+                2016-10-07
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -1397,11 +1872,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/" itemprop="url" rel="index">
                     <span itemprop="name">Programming</span>
                   </a>
@@ -1409,11 +1883,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/React-Native/" itemprop="url" rel="index">
                     <span itemprop="name">React Native</span>
                   </a>
@@ -1421,28 +1894,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/07/RN(7)_Layout_with_Flexbox/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/07/RN(7)_Layout_with_Flexbox/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/07/RN(7)_Layout_with_Flexbox/" class="leancloud_visitors" data-flag-title="RN(7) Layout With Flexbox">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -1456,12 +1935,18 @@
       
         
           <h2 id="Layout-with-Flexbox"><a href="#Layout-with-Flexbox" class="headerlink" title="Layout with Flexbox"></a>Layout with Flexbox</h2><h3 id="1-Flex-Direction"><a href="#1-Flex-Direction" class="headerlink" title="1. Flex Direction"></a>1. Flex Direction</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, StyleSheet, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      <span class="comment">// Try setting `flexDirection` to `column`.</span></div><div class="line">      &lt;View style=&#123;&#123;<span class="attr">flex</span> : <span class="number">1</span>, <span class="attr">flexDirection</span> : <span class="string">'row'</span>&#125;&#125;&gt;</div><div class="line">      &lt;View style=&#123;styles.smallBlue&#125; /&gt;</div><div class="line">      &lt;View style=&#123;styles.middleBlue&#125; /&gt;</div><div class="line">      &lt;View style=&#123;styles.bigBlue&#125; /&gt;</div><div class="line">      &lt;/View&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">const styles = StyleSheet.create(&#123;</div><div class="line">    smallBlue : &#123;</div><div class="line">        backgroundColor : 'powderblue',</div><div class="line">        width : 50,</div><div class="line">        height : 50</div><div class="line">    &#125;,</div><div class="line">    middleBlue : &#123;</div><div class="line">        backgroundColor : 'skyblue',</div><div class="line">        width : 50,</div><div class="line">        height : 50</div><div class="line">    &#125;,</div><div class="line">    bigBlue : &#123;</div><div class="line">        backgroundColor : 'steelblue',</div><div class="line">        width : 50,</div><div class="line">        height : 50</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent('MyFirstReactNativeProject', () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/10/07/RN(7)_Layout_with_Flexbox/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1479,6 +1964,8 @@
       
 
       
+
+      
       
         <div class="post-eof"></div>
       
@@ -1490,13 +1977,23 @@
       
 
   
-  
 
   
   
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://coder-zjq.github.io/2016/10/06/RN(6)_Width_Height/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ZJQ">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ZJQ's Blog">
+    </span>
 
     
       <header class="post-header">
@@ -1518,24 +2015,36 @@
 
         <div class="post-meta">
           <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-06T20:42:26+08:00" content="2016-10-06">
-              2016-10-06
-            </time>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-06T20:42:26+08:00">
+                2016-10-06
+              </time>
+            
+
+            
+
+            
           </span>
 
           
             <span class="post-category" >
-              &nbsp; | &nbsp;
+            
+              <span class="post-meta-divider">|</span>
+            
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">分类于</span>
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/" itemprop="url" rel="index">
                     <span itemprop="name">Technology</span>
                   </a>
@@ -1543,11 +2052,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/" itemprop="url" rel="index">
                     <span itemprop="name">Programming</span>
                   </a>
@@ -1555,11 +2063,10 @@
 
                 
                 
-                  ， 
+                  , 
                 
-
               
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Technology/Programming/React-Native/" itemprop="url" rel="index">
                     <span itemprop="name">React Native</span>
                   </a>
@@ -1567,28 +2074,34 @@
 
                 
                 
-
               
             </span>
           
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/06/RN(6)_Width_Height/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/06/RN(6)_Width_Height/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+          
+
+          
+          
+             <span id="/2016/10/06/RN(6)_Width_Height/" class="leancloud_visitors" data-flag-title="RN(6) Width Height">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
           
 
           
 
           
-          
 
           
+
         </div>
       </header>
     
@@ -1602,12 +2115,18 @@
       
         
           <h2 id="Width-amp-Height"><a href="#Width-amp-Height" class="headerlink" title="Width &amp; Height"></a>Width &amp; Height</h2><h3 id="1-Fixed-Dimensions"><a href="#1-Fixed-Dimensions" class="headerlink" title="1. Fixed Dimensions"></a>1. Fixed Dimensions</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"></div><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, StyleSheet, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      &lt;View&gt;</div><div class="line">      &lt;View style=&#123;styles.smallBlue&#125; /&gt;</div><div class="line">      &lt;View style=&#123;styles.middleBlue&#125; /&gt;</div><div class="line">      &lt;View style=&#123;styles.bigBlue&#125; /&gt;</div><div class="line">      &lt;/View&gt;</div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">const styles = StyleSheet.create(&#123;</div><div class="line">    smallBlue : &#123;</div><div class="line">        backgroundColor : 'powderblue',</div><div class="line">        width : 50,</div><div class="line">        height : 50</div><div class="line">    &#125;,</div><div class="line">    middleBlue : &#123;</div><div class="line">        backgroundColor : 'skyblue',</div><div class="line">        width : 100,</div><div class="line">        height : 100</div><div class="line">    &#125;,</div><div class="line">    bigBlue : &#123;</div><div class="line">        backgroundColor : 'steelblue',</div><div class="line">        width : 150,</div><div class="line">        height : 150</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent('MyFirstReactNativeProject', () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
+          <!--noindex-->
+          <div class="post-button text-center">
             <a class="btn" href="/2016/10/06/RN(6)_Width_Height/#more" rel="contents">
-              阅读全文 &raquo;
+              Read more &raquo;
             </a>
           </div>
+          <!--/noindex-->
         
+      
+    </div>
+
+    <div>
       
     </div>
 
@@ -1622,150 +2141,6 @@
     <footer class="post-footer">
       
 
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/10/05/RN(5)_Style/" itemprop="url">
-                  RN(5) Style
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-05T20:42:26+08:00" content="2016-10-05">
-              2016-10-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Technology/" itemprop="url" rel="index">
-                    <span itemprop="name">Technology</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Technology/Programming/" itemprop="url" rel="index">
-                    <span itemprop="name">Programming</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Technology/Programming/React-Native/" itemprop="url" rel="index">
-                    <span itemprop="name">React Native</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/10/05/RN(5)_Style/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/05/RN(5)_Style/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="Style"><a href="#Style" class="headerlink" title="Style"></a>Style</h3><figure class="highlight js"><table><tr><td class="code"><pre><div class="line"><span class="keyword">import</span> React, &#123; Component &#125; <span class="keyword">from</span> <span class="string">'react'</span>;</div><div class="line"><span class="keyword">import</span> &#123; AppRegistry, StyleSheet, Text, View &#125; <span class="keyword">from</span> <span class="string">'react-native'</span>;</div><div class="line"></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyFirstReactNativeProject</span> <span class="keyword">extends</span> <span class="title">Component</span> </span>&#123;</div><div class="line">  render() &#123;</div><div class="line">    <span class="keyword">return</span> (</div><div class="line">      <span class="xml"><span class="tag">&lt;<span class="name">View</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;styles.justRed&#125;</span>&gt;</span>just red text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;styles.bigGreen&#125;</span>&gt;</span>just big green text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;[styles.bigGreen,</span> <span class="attr">styles.justRed</span>]&#125;&gt;</span>big green then red text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">Text</span> <span class="attr">style</span>=<span class="string">&#123;[styles.justRed,</span> <span class="attr">styles.bigGreen</span>]&#125;&gt;</span>red then big green text<span class="tag">&lt;/<span class="name">Text</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">View</span>&gt;</span></span></div><div class="line">    );</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">const</span> styles = StyleSheet.create(&#123;</div><div class="line">    <span class="attr">bigGreen</span> : &#123;</div><div class="line">        <span class="attr">color</span> : <span class="string">'#00ff00'</span>,</div><div class="line">        <span class="attr">fontWeight</span> : <span class="string">'bold'</span>,</div><div class="line">        <span class="attr">fontSize</span> : <span class="number">25</span></div><div class="line">    &#125;,</div><div class="line">    <span class="attr">justRed</span> : &#123;</div><div class="line">        <span class="attr">color</span> : <span class="string">'red'</span>,</div><div class="line">    &#125;,</div><div class="line"></div><div class="line">&#125;);</div><div class="line">AppRegistry.registerComponent(<span class="string">'MyFirstReactNativeProject'</span>, () =&gt; MyFirstReactNativeProject);</div></pre></td></tr></table></figure>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/10/05/RN(5)_Style/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
       
 
       
@@ -1813,36 +2188,45 @@
 
       
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://avatars1.githubusercontent.com/u/15013685?v=3&s=460"
                alt="ZJQ" />
           <p class="site-author-name" itemprop="name">ZJQ</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+           
+              <p class="site-description motion-element" itemprop="description">Always Be Coding...</p>
+          
         </div>
         <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">31</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
 
           
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">21</span>
-                <span class="site-state-item-name">分类</span>
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-name">posts</span>
               </a>
             </div>
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">22</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
             <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">29</span>
-                <span class="site-state-item-name">标签</span>
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-name">tags</span>
               </a>
             </div>
           
@@ -1853,6 +2237,35 @@
 
         <div class="links-of-author motion-element">
           
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/Coder-ZJQ" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/zjq.joker" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://plus.google.com/105506194418471567135" target="_blank" title="Google+">
+                  
+                    <i class="fa fa-fw fa-google"></i>
+                  
+                  Google+
+                </a>
+              </span>
+            
+          
         </div>
 
         
@@ -1860,8 +2273,47 @@
 
         
         
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://developer.apple.com/reference/" title="Apple API Reference" target="_blank">Apple API Reference</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://developer.apple.com/library/prerelease/content/navigation/" title="Apple Guide" target="_blank">Apple Guide</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://facebook.github.io/react/" title="react" target="_blank">react</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://facebook.github.io/react-native/" title="react-native" target="_blank">react-native</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://dribbble.com/" title="dribbble" target="_blank">dribbble</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://pttrns.com/" title="pttrns" target="_blank">pttrns</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
 
       </section>
+
+      
 
       
 
@@ -1878,49 +2330,39 @@
         <div class="copyright" >
   
   &copy;  2015 - 
-  <span itemprop="copyrightYear">2016</span>
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">ZJQ</span>
 </div>
 
+
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主题 -
+  Theme -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
+    NexT.Mist
   </a>
 </div>
 
+
         
-
-<div class="busuanzi-count">
-
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-  
-    <span class="site-uv"><i class="fa fa-user"></i><span class="busuanzi-value" id="busuanzi_value_site_uv"></span></span>
-  
-
-  
-    <span class="site-pv"><i class="fa fa-eye"></i><span class="busuanzi-value" id="busuanzi_value_site_pv"></span></span>
-  
-  
-</div>
-
-
 
         
       </div>
     </footer>
 
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
   </div>
 
   
@@ -1940,6 +2382,9 @@
 
 
   
+
+
+
 
 
 
@@ -1965,54 +2410,49 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
 
 
 
   
   
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
 
   
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
 
 
 
   
 
-  
-    
+
   
 
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"coder-zjq"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
+
+
+
+	
+
+
+
+
 
   
     
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "b97c1765e40c449ab2a4e2f881ea3e09",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
   
 
 
@@ -2020,115 +2460,117 @@
 
 
 
+
+
+
+
   
-  
+
   <script type="text/javascript">
     // Popup Window;
     var isfetched = false;
     // Search DB path;
     var search_path = "search.xmlsearch";
     if (search_path.length == 0) {
-       search_path = "search.xml";
+      search_path = "search.xml";
     }
     var path = "/" + search_path;
     // monitor main search box;
 
     function proceedsearch() {
-      $("body").append('<div class="popoverlay">').css('overflow', 'hidden');
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
       $('.popup').toggle();
-
     }
     // search function;
     var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
+      'use strict';
+      $.ajax({
         url: path,
         dataType: "xml",
         async: true,
         success: function( xmlResponse ) {
-            // get the contents from search data
-            isfetched = true;
-            $('.popup').detach().appendTo('.header-inner');
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
-            var $input = document.getElementById(search_id);
-            var $resultContent = document.getElementById(content_id);
-            $input.addEventListener('input', function(){
-                var matchcounts = 0;
-                var str='<ul class=\"search-result-list\">';
-                var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
-                if (this.value.trim().length > 1) {
-                // perform local searching
-                datas.forEach(function(data) {
-                    var isMatch = true;
-                    var content_index = [];
-                    var data_title = data.title.trim().toLowerCase();
-                    var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
-                    var data_url = data.url;
-                    var index_title = -1;
-                    var index_content = -1;
-                    var first_occur = -1;
-                    // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
-                        keywords.forEach(function(keyword, i) {
-                            index_title = data_title.indexOf(keyword);
-                            index_content = data_content.indexOf(keyword);
-                            if( index_title < 0 && index_content < 0 ){
-                                isMatch = false;
-                            } else {
-                                if (index_content < 0) {
-                                    index_content = 0;
-                                }
-                                if (i == 0) {
-                                    first_occur = index_content;
-                                }
-                            }
-                        });
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = $( "entry", xmlResponse ).map(function() {
+            return {
+              title: $( "title", this ).text(),
+              content: $("content",this).text(),
+              url: $( "url" , this).text()
+            };
+          }).get();
+          var $input = document.getElementById(search_id);
+          var $resultContent = document.getElementById(content_id);
+          $input.addEventListener('input', function(){
+            var matchcounts = 0;
+            var str='<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length > 1) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var content_index = [];
+                var data_title = data.title.trim().toLowerCase();
+                var data_content = data.content.trim().replace(/<[^>]+>/g,"").toLowerCase();
+                var data_url = decodeURIComponent(data.url);
+                var index_title = -1;
+                var index_content = -1;
+                var first_occur = -1;
+                // only match artiles with not empty titles and contents
+                if(data_title != '') {
+                  keywords.forEach(function(keyword, i) {
+                    index_title = data_title.indexOf(keyword);
+                    index_content = data_content.indexOf(keyword);
+                    if( index_title >= 0 || index_content >= 0 ){
+                      isMatch = true;
+                      if (i == 0) {
+                        first_occur = index_content;
+                      }
                     }
-                    // show search results
-                    if (isMatch) {
-                        matchcounts += 1;
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
-                        var content = data.content.trim().replace(/<[^>]+>/g,"");
-                        if (first_occur >= 0) {
-                            // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 80;
-                            if(start < 0){
-                                start = 0;
-                            }
-                            if(start == 0){
-                                end = 50;
-                            }
-                            if(end > content.length){
-                                end = content.length;
-                            }
-                            var match_content = content.substring(start, end);
-                            // highlight all keywords
-                            keywords.forEach(function(keyword){
-                                var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
-                            });
 
-                            str += "<p class=\"search-result\">" + match_content +"...</p>"
-                        }
-                        str += "</li>";
+                  });
+                }
+                // show search results
+                if (isMatch) {
+                  matchcounts += 1;
+                  str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                  var content = data.content.trim().replace(/<[^>]+>/g,"");
+                  if (first_occur >= 0) {
+                    // cut out 100 characters
+                    var start = first_occur - 20;
+                    var end = first_occur + 80;
+                    if(start < 0){
+                      start = 0;
                     }
-                })};
-                str += "</ul>";
-                if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
-                if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
-                $resultContent.innerHTML = str;
-            });
-            proceedsearch();
+                    if(start == 0){
+                      end = 50;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    var match_content = content.substring(start, end);
+                    // highlight all keywords
+                    keywords.forEach(function(keyword){
+                      var regS = new RegExp(keyword, "gi");
+                      match_content = match_content.replace(regS, "<b class=\"search-keyword\">"+keyword+"</b>");
+                    });
+
+                    str += "<p class=\"search-result\">" + match_content +"...</p>"
+                  }
+                  str += "</li>";
+                }
+              })};
+            str += "</ul>";
+            if (matchcounts == 0) { str = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>' }
+            if (keywords == "") { str = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>' }
+            $resultContent.innerHTML = str;
+          });
+          proceedsearch();
         }
-    });}
+      });}
 
     // handle and trigger popup window;
     $('.popup-trigger').click(function(e) {
@@ -2138,18 +2580,129 @@
       } else {
         proceedsearch();
       };
-
     });
 
     $('.popup-btn-close').click(function(e){
       $('.popup').hide();
-      $(".popoverlay").remove();
+      $(".local-search-pop-overlay").remove();
       $('body').css('overflow', '');
     });
     $('.popup').click(function(e){
       e.stopPropagation();
     });
   </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("NDR4ht5tQMwY98BfVRpuVxev-gzGzoHsz", "t8QAyw6QhVkCuOx3FUpHNehq");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
 
 
   
