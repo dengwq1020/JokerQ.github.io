@@ -105,7 +105,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"display":"always","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -168,7 +168,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
@@ -438,7 +438,7 @@
       
 
       
-        <h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></div><div class="line">document.getElementById("demo").innerHTML="My First JavaScript";</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+        <h3 id="通过指定的-id-来访问-HTML-元素，并改变其内容："><a href="#通过指定的-id-来访问-HTML-元素，并改变其内容：" class="headerlink" title="通过指定的 id 来访问 HTML 元素，并改变其内容："></a>通过指定的 id 来访问 HTML 元素，并改变其内容：</h3><figure class="highlight html"><table><tr><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>My First Web Page<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">id</span>=<span class="string">"demo"</span>&gt;</span>My First Paragraph<span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="built_in">document</span>.getElementById(<span class="string">"demo"</span>).innerHTML=<span class="string">"My First JavaScript"</span>;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -687,6 +687,10 @@
                   <a href="https://pttrns.com/" title="pttrns" target="_blank">pttrns</a>
                 </li>
               
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.deviantart.com/" title="deviant art" target="_blank">deviant art</a>
+                </li>
+              
             </ul>
           </div>
         
@@ -783,6 +787,8 @@
   
 
 
+  
+
 
 
 
@@ -804,6 +810,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
